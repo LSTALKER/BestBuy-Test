@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- Start: Header -->
+    <RelativeLayout style="@style/default_style">
+		<RelativeLayout style="@style/header">
+			<ImageView
+				android:id="@+id/header_home"
+				style="@style/header_logo" 
+				android:contentDescription="@string/image_content_description"/>
+			<TextView android:text="Select Appliance" style="@style/text.header" />
+			<include layout="@layout/header_cart_button" />
+		</RelativeLayout>
+	</RelativeLayout>
+	
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heading_back" 
+        android:contentDescription="@string/image_content_description"/>
+
+    <!-- End: Header -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="9dip"
+        android:paddingRight="8dip"
+        android:paddingTop="4dip" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/commerce_whitebox"
+            android:cacheColorHint="#00000000"
+            android:divider="#FFcccccc"
+            android:dividerHeight="1dip"
+            android:focusable="true"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

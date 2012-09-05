@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_app_header"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="7dip" >
+
+        <ImageView
+            android:id="@+id/header_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="homeListener"
+            android:src="@drawable/btn_home"
+            android:visibility="invisible"
+            android:contentDescription="@string/image_content_description" />
+
+        <!-- We have the below entry in origin. Need to revisit -->
+
+        <ImageView
+            android:id="@+id/header_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="homeListener"
+            android:src="@drawable/bg_logo"
+            android:contentDescription="@string/image_content_description" />
+
+        <Button
+            android:id="@+id/header_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:layout_toLeftOf="@+id/header_cart"
+            android:layout_toRightOf="@id/header_logo"
+            android:background="@drawable/btn_search"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dip"
+            android:gravity="left|center_vertical"
+            android:maxHeight="35dip"
+            android:onClick="searchListener"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/search_bestbuy_title"
+            android:textColor="#656565"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/search_result_narrow"
+            style="@style/button_blue_2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/REFINE_RESULTS_TITLE"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/header_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="cartListener"
+            android:src="@drawable/btn_cart" 
+            android:contentDescription="@string/image_content_description"/>
+
+        <RelativeLayout
+            android:id="@+id/header_cart_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/btn_cart_badge"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/header_cart_badge_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/noti_initial_count"
+                android:textColor="#fff"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

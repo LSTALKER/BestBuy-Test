@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bestbuy.android"
+    android:installLocation="auto"
+    android:versionCode="650"
+    android:versionName="6.5.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="com.bestbuy.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.bestbuy.android.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- To make the application visible in Xoom tablet since it does not support Voice & SMS -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".data.BestBuyApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/BBYTheme" >
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library android:name="android.test.runner" />
+
+        <provider
+            android:name=".util.ImageContentProvider"
+            android:authorities="com.bestbuy.android" />
+        <provider
+            android:name=".util.SuggestionProvider"
+            android:authorities="com.bestbuy.android.util.SuggestionProvider" />
+
+        <activity
+            android:name=".activity.Home"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PhotoBrowser"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImageTapper"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!-- stateHidden is to stop the keyboard from showing. -->
+        <activity
+            android:name=".activity.BestBuy"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- stateHidden is to stop the keyboard from showing. -->
+        <activity
+            android:name=".activity.SearchResultList"
+            android:configChanges="orientation|keyboard|keyboardHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.BrowseProductList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.GamingSearch"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.ProductReviewDetails"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.ProductDetail"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.ProductDetailHelpActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.ProductDetailSpecifications"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.InStoreAvailability"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.DeliveryDates"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.DeliveryDatesList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity android:name=".activity.Feedback" />
+        <activity
+            android:name=".activity.ProductReview"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.CartList"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/BBY_Cart_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.MDot" />
+        <activity
+            android:name=".activity.BrowseCategory"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.CategoryBrowse"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.StoreLocatorList"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".storeevent.activity.StoreInfoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".storeevent.activity.StoreLocatorMapActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.StoreLocatorMap"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name="com.bestbuy.android.storeevent.activity.StoreEventsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name="com.bestbuy.android.storeevent.activity.StoreEventsInfoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".openbox.activity.OpenBoxClearanceActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".openbox.activity.OpenBoxClearanceCategoryActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".openbox.activity.OpenBoxClearanceItemDetailsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".openbox.activity.OpenBoxClearanceItemListActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".openbox.activity.OpenBoxInterstitialActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.Terms" />
+        <activity
+            android:name=".activity.DealCategoryList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.DealRootCategoryList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.OffersList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RewardZoneLogin"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RewardZoneCertificate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RewardZone"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RewardZonePoints"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RewardZonePurchases"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RewardZoneDetailedReceipt"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RZLogin"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".rewardzone.activity.RewardZoneOffers"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".rewardzone.activity.RewardZoneLegalTerms"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".rewardzone.activity.RewardZoneOffer"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".rewardzone.activity.RewardZoneOfferInstructions"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".rewardzone.activity.RewardZoneBBYOffers"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RewardZoneOfferLegal"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity android:name=".activity.RewardZoneSettings" />
+        <activity
+            android:name=".activity.RewardZoneCertificateDetails"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.RewardZoneSilverDetails" />
+        <activity
+            android:name=".activity.RewardZoneCard"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.SavedProductList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.ScannedProductList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity android:name=".activity.NoConnectivity" />
+        <activity android:name=".activity.ListChooser" />
+        <activity
+            android:name=".activity.commerce.CommerceSignIn"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceCheckout"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceCreateAccount"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceOrderComplete"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceAccountCreated"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceAddPaymentMethod"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceAddNewAddress"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceAddGiftCard"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceAddNewShippingAddress"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommercePaymentInformation"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceShippingAddress"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceDeliveryOptions"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceStoreSearch"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceSelectStore"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceAddRewardZone"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceCid"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceFriendsAndFamily"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceSelectFriendsAndFamily"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceUpdateFriendsAndFamily"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceHomeDeliveryAddress"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceHomeDeliveryDates"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceOrderStatus"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceOrderHistoryLookup"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceOrderStatusLookup"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceGiftCardBalance"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceGiftCardNewBalance"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceContactPicker"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceGuestAddShipping"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.commerce.CommerceGuestSignIn"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <!-- Start: HEM -->
+        <activity
+            android:name="com.bestbuy.android.hem.activity.LocalRebates"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.hem.activity.LocalRebateFinder"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.hem.activity.LocalRebateFinderBrand"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.bestbuy.android.hem.activity.LocalRebateFinderAppliance"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.bestbuy.android.hem.activity.LocalRebateFinderproduct"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TermsAndConditions"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- End: HEM -->
+        <activity
+            android:name=".activity.PhotoSearchQuery"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.PhotoSearchList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.ProductCompare"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RecommendedAccessories"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.BBYCode"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.AlertWebView"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.SoldAndShippedByWebActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.WishListCreated"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.History"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.WishListView"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.YourAccount"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.PreferredCategories"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.NotificationList"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.NotificationDetail"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.StateSelector"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.WarrantyTerms"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.RecommendationsInterstitial"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.Recommendations"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.Likes"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.NarrowResults"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.NarrowFilter"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.GeekSquad"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.GamingLibrary"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.GamingNarrow"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.GamingDetail"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.SpecialOffersDetail"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".activity.Environment"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ProductCompareEdit"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name="com.bestbuy.android.scanner.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.mobiledatasys.decoder.LookupActivity" />
+        <!-- Upgrade Checker -->
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.UpgradeChecker"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.ATandTUpgradeChecker"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.SprintUpgradeChecker"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.VerizonUpgradeChecker"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.TMobileUpgradeChecker"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.UpgradeCheckerTermsandConditions"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.PhoneNumberListActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.AllSetActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bestbuy.android.upgradechecker.activity.TermsAndConditionsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- End: Upgrade Checker -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".activity.SearchResultList" />
+
+        <activity
+            android:name="com.bestbuy.android.activity.MDOTProductDetail"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousSampleActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousListView"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousDetail"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousCategoriesList"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousReview"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousTermsConditions"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.AppoliciousFindStoresList"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".appolicious.activity.BlueShirtRecommendations"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.BlueShirtStoresByZip"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity
+            android:name=".appolicious.activity.DescriptionBlueShirt"
+            android:configChanges="orientation|keyboard|keyboardHidden" />
+        <activity android:name=".activity.StoreAvailability" >
+        </activity>
+
+        <!-- REQUIRED -->
+        <receiver android:name="com.urbanairship.CoreReceiver" >
+
+            <!-- REQUIRED IntentFilter - For Helium and Hybrid -->
+            <!-- <intent-filter > -->
+            <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+            <!-- <action android:name="android.intent.action.ACTION_SHUTDOWN" /> -->
+            <!-- </intent-filter> -->
+        </receiver>
+
+        <!-- REQUIRED for C2DM and Hybrid -->
+        <receiver
+            android:name="com.urbanairship.push.c2dm.C2DMPushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <!-- Receive the actual message -->
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.bestbuy.android" />
+            </intent-filter>
+            <!-- Receive the registration id -->
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.bestbuy.android" />
+            </intent-filter>
+        </receiver>
+
+        <!-- REQUIRED -->
+        <!--
+             The 'android:process' parameter is optional. Set it to a value starting
+            with a colon (:) to make it run in a separate,
+            private process
+        -->
+        <service
+            android:name="com.urbanairship.push.PushService"
+            android:process=":com.urbanairship.push.process" />
+
+        <!-- OPTIONAL, if you want to receive push, push opened and registration completed intents -->
+        <!-- Replace the receiver below with your package and class name -->
+        <receiver android:name=".pushnotifications.uapush.IntentReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.ACTION_TIME_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".pushnotifications.activity.PnDealOfTheDayActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.bestbuy.android.pushnotifications.activity.PnRewardZoneActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.bestbuy.android.pushnotifications.activity.PnWeeklyOffersActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.bestbuy.android.pushnotifications.activity.PushNotificationsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".pushnotifications.activity.PnDodWebviewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden" >
+        </activity>
+        <activity android:name=".environment.activity.EnvironmentActivity" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.bestbuy.android" />
+
+</manifest>

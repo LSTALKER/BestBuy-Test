@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/header" >
+
+        <ImageView
+            android:id="@+id/header_home"
+            style="@style/header_logo" 
+            android:contentDescription="@string/image_content_description"/>
+
+        <TextView
+            style="@style/text.header"
+            android:text="@string/my_account_text" />
+
+        <!--
+             <include
+            android:id="@+id/header_cart_button_layout"
+            layout="@layout/header_cart_button" />
+        -->
+
+        <Button
+            android:id="@+id/header_done"
+            style="@style/button_blue_2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="@string/done_text"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/commerce_scrollView"
+        android:fillViewport="true" >
+
+        <LinearLayout style="@style/commerce_main" >
+
+            <LinearLayout
+                android:id="@+id/your_account_order_status"
+                style="@style/commerce_box.white.padded"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/commerce_text.h3"
+                    android:layout_weight="1"
+                    android:text="Order History" />
+
+                <ImageView
+                    style="@style/default_style_wrap"
+                    android:src="@drawable/carrot_r" 
+                    android:contentDescription="@string/image_content_description"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/commerce_text.h2.label.gray"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="5dip"
+                android:text="Edit Your Purchase Information"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/commerce_box.white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.bestbuy.android.ui.CommerceBox
+                    android:id="@+id/your_account_edit_shipping"
+                    style="@style/commerce_box.inner.top"
+                    CommerceBox:checkmark="gone" >
+
+                    <TextView
+                        style="@style/commerce_text.h3"
+                        android:layout_weight="1"
+                        android:text="Edit Shipping Addresses" />
+                </com.bestbuy.android.ui.CommerceBox>
+
+                <View style="@style/horizontal_line" />
+
+                <com.bestbuy.android.ui.CommerceBox
+                    android:id="@+id/your_account_edit_payment"
+                    style="@style/commerce_box.inner.bottom"
+                    CommerceBox:checkmark="gone" >
+
+                    <TextView
+                        style="@style/commerce_text.h3"
+                        android:layout_weight="1"
+                        android:text="Edit Credit Cards" />
+                </com.bestbuy.android.ui.CommerceBox>
+            </LinearLayout>
+
+            <TextView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:text="@string/notifications"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dip"
+                 />
+            
+            <LinearLayout
+                style="@style/commerce_box.white"
+                android:orientation="vertical" >
+
+                <com.bestbuy.android.ui.CommerceBox
+                    android:id="@+id/your_account_manage_pushnotifications"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/commerce_box"
+                    CommerceBox:checkmark="gone"
+                    android:padding="6dip" >
+
+                    <TextView
+                        style="@style/commerce_text.h3"
+                        android:layout_weight="1"
+                        android:text="@string/manage_noti_text" />
+                </com.bestbuy.android.ui.CommerceBox>
+                <!--
+            	<View android:id="@+id/your_account_personalize_recommendations_divider"
+					style="@style/horizontal_line" />
+				<com.bestbuy.android.ui.CommerceBox
+					style="@style/commerce_box.inner.bottom"
+					CommerceBox:checkmark="gone"
+					android:id="@+id/your_account_personalize_recommendations">
+					<TextView
+						style="@style/commerce_text.h3"
+						android:id="@+id/your_account_order_status"
+						android:layout_weight="1"
+						android:text="Personalize Recommendations" />
+				</com.bestbuy.android.ui.CommerceBox>
+
+
+                -->
+            </LinearLayout>
+            
+
+            <LinearLayout
+                style="@style/commerce_box.white"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <com.bestbuy.android.ui.CommerceBox
+                    android:id="@+id/your_account_feedback"
+                    style="@style/commerce_box.inner.top"
+                    CommerceBox:checkmark="gone" >
+
+                    <TextView
+                        style="@style/commerce_text.h3"
+                        android:layout_weight="1"
+                        android:text="@string/feedback_title" />
+                </com.bestbuy.android.ui.CommerceBox>
+
+                <View style="@style/horizontal_line" />
+
+                <com.bestbuy.android.ui.CommerceBox
+                    android:id="@+id/your_account_terms"
+                    style="@style/commerce_box.inner.bottom"
+                    CommerceBox:checkmark="gone" >
+
+                    <TextView
+                        style="@style/commerce_text.h3"
+                        android:layout_weight="1"
+                        android:text="Terms &amp; Conditions" />
+                </com.bestbuy.android.ui.CommerceBox>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

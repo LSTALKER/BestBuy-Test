@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/product_compare_main"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/compare_background_gray">
+	<RelativeLayout
+		style="@style/header">
+		<ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo" 
+			android:contentDescription="@string/image_content_description"/>
+		<TextView
+			style="@style/text.header"
+			android:text="View Specs" />
+	</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/product_compare"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+		<LinearLayout
+			android:id="@+id/product_compare_left"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#aaa"
+				android:padding="8dip">			
+				<ImageView
+					android:id="@+id/product_compare_left_icon"
+					android:layout_width="148dip"
+					android:layout_height="118dip"
+					android:padding="12dip"
+					android:scaleType="fitCenter" 
+					android:contentDescription="@string/image_content_description"/>
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="left">	
+					<TextView
+						android:id="@+id/product_compare_left_selected_text"
+						android:text="Selected"
+						android:layout_width="fill_parent"
+						android:layout_height="35dip"
+						android:textStyle="bold"
+						android:textColor="#111"/>
+						
+					<TextView
+						android:id="@+id/product_compare_left_name"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:textStyle="bold"
+						android:textColor="#111"/>
+						
+					<Button
+						android:id="@+id/product_compare_left_button"
+						android:layout_width="wrap_content"
+						android:layout_height="35dip"
+						android:text="@string/compare_title"
+						android:textStyle="bold"
+						android:textColor="#111" 
+						android:layout_marginTop="5dip"
+						android:layout_marginBottom="5dip" />
+	
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="0dip"
+						android:orientation="horizontal"
+						android:layout_weight="1">
+						<ImageView
+							android:id="@+id/product_compare_left_star_rating"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dip"
+							android:layout_marginRight="3dip"
+							android:contentDescription="@string/image_content_description" />
+						
+						<TextView
+							android:id="@+id/product_compare_left_rating"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal"
+							android:textStyle="bold" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="160dip"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:visibility="gone">
+					
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#aaa"
+				android:padding="8dip">
+				
+				<Button
+				android:id="@+id/product_compare_right_scan"
+				android:layout_width="fill_parent"
+				android:layout_height="35dip"
+				android:text="Scan a code"
+				android:textStyle="bold"
+				android:textColor="#111"
+				android:gravity="center" />		
+				
+				<LinearLayout
+					android:id="@+id/product_compare_right"			
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">		
+
+					<Button
+					android:id="@+id/product_compare_right_button"
+					android:layout_width="fill_parent"
+					android:layout_height="35dip"
+					android:text="Compare this"
+					android:textStyle="bold"
+					android:textColor="#111"
+					android:gravity="center_horizontal" />					
+	
+					<ImageView
+						android:id="@+id/product_compare_right_icon"
+						android:layout_width="fill_parent"
+						android:layout_height="80dip"
+						android:layout_weight="99"
+						android:padding="12dip" 
+						android:contentDescription="@string/image_content_description"/>
+						
+					<TextView
+					android:id="@+id/product_compare_right_name"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textColor="#111"
+					android:gravity="center_horizontal"/>
+	
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_weight="1"
+						android:gravity="center">
+						<ImageView
+							android:id="@+id/product_compare_right_star_rating"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dip"
+							android:layout_marginRight="3dip"
+							android:gravity="center" 
+							android:contentDescription="@string/image_content_description"/>
+						
+						<TextView
+							android:id="@+id/product_compare_right_rating"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="top"
+							android:textStyle="bold" />
+					</LinearLayout>
+				</LinearLayout>	
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#aaa"
+		android:layout_below="@id/product_compare">
+		<ProgressBar
+			android:id="@+id/product_compare_loading"
+	   		android:layout_below="@id/product_compare_left_star_rating"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   		android:indeterminateDrawable="@drawable/rz_progress"
+	   		style="?android:attr/progressBarStyleSmall" />
+		<ListView
+			android:layout_width="fill_parent"
+			android:id="@+id/product_compare_spec_list"
+			android:layout_height="fill_parent"
+			android:divider="#F5F7F6"
+			android:dividerHeight="1dip"
+			android:cacheColorHint="@android:color/transparent" />
+	</LinearLayout>
+	<ImageView
+		android:id="@+id/product_compare_semicircle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/semicircle"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true" 
+		android:contentDescription="@string/image_content_description"/>
+	<TextView
+		android:id="@+id/product_compare_num_products"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/noti_initial_count"
+		android:textSize="17.5sp"
+		android:textColor="#ffffff"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="14dip"
+		android:gravity="right"
+		android:textStyle="bold" />
+	<ImageView
+		android:id="@+id/product_compare_bubble"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:paddingBottom="35dip"
+		android:paddingLeft="110dip"
+		android:src="@drawable/comparebubble"
+		android:scaleType="fitCenter" 
+		android:contentDescription="@string/image_content_description"/>		
+</RelativeLayout>

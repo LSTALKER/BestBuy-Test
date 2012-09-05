@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<include layout="@layout/header2" /> 
+	
+	<TextView android:text="@string/openbox_items"
+        android:layout_width="fill_parent" android:id="@+id/openbox_header"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold"
+        android:padding="5dip"
+        android:background="#ddd"
+        android:layout_below="@id/header" />
+
+	<LinearLayout android:id="@+id/bg_image"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/bg_image">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Some categories may not contain products"
+			android:textColor="#737474" android:textSize="13sp"
+			android:layout_gravity="center" android:paddingLeft="30dip" />
+	</LinearLayout>
+
+	<ListView android:id="@+id/openbox_listview"
+		android:cacheColorHint="#00000000" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:divider="#cccccc"
+		android:dividerHeight="1dip" android:fadeScrollbars="false" android:scrollbars="vertical"/>
+	
+	<RelativeLayout
+	 	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	 	android:id="@+id/statusLayout">
+		
+		<TextView android:id="@+id/status_text" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="#747474" android:textSize="17dip" 
+			android:layout_marginLeft="44dip"
+			android:layout_marginRight="50dip"
+			android:layout_marginTop="133dip" 
+			android:gravity="center"
+			android:textStyle="bold"/>
+			
+	</RelativeLayout>
+		
+</LinearLayout>

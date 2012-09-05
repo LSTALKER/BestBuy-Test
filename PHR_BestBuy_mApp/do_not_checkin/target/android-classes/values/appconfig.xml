@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--
+		String reqUrl = "https://api.remix.bestbuy.com/oauth/request_token";
+		String authzUrl = "https://authorize.bestbuy.com/authorizations";
+		String accessUrl = "https://api.remix.bestbuy.com/oauth/access_token";
+		DEV : http://dldolsapp02.na.bestbuy.com:22422 CIT :
+		https://dlcolsapp01.na.bestbuy.com:14341 QA :
+		https://commerce.qa.bestbuy.com:443 STAGE :
+		https://commerce-ssl.stage.bestbuy.com:443 PROD :
+		https://commerce-ssl.bestbuy.com:443
+	-->
+
+	<!--
+		Random Configuration - this will print all log messages, and enable
+		all test staging flags
+	-->
+	<string name="is_test">false</string>
+	<string name="is_splash">true</string>
+	<string name="is_omniture_devsuite">true</string>
+	<string name="hidden_data_directory">.data</string>
+	<!--  Production KEY 0nMylGRbC5AqOzNDZUEKo-5A2thKB6DXITdygeA -->
+	<!--  DEV KEY 00yOf_UcWEeijORvYPEjHEm2JquLJZwHBm8MBLg -->
+	<string name="map_api_key">0nMylGRbC5AqOzNDZUEKo-5A2thKB6DXITdygeA</string>
+	<string name="enable_gzip">true</string>
+
+	<!-- Commerce Configuration -->
+	<string name="commerce_domain">commerce-ssl.bestbuy.com</string>
+	<string name="commerce_api_url">https://commerce-ssl.bestbuy.com</string>
+	<string name="use_proxy">false</string>
+	<string name="commerce_path">/commerce/v0/start</string>
+
+	<!-- BBY Configuration -->
+	<string name="bby_list_host">https://bbylist.appspot.com</string>
+	<string name="bby_list_api_key">PCLhFNcZ5p2P1Tr</string>
+	<!-- <string name="bby_rz_offer">https://ec2-50-17-83-89.compute-1.amazonaws.com</string>--> 
+	<string name="bby_rz_offer">https://myrewardzone.bestbuy.com</string> 	
+	<string name="bby_serv_url">http://bbyserv.appspot.com</string>
+	<string name="bby_serv_api_key">5pBWNsVQg86zyht</string>
+	<string name="SMAL_service_url">http://bb301.heroku.com</string>
+<!-- 	<string name="SMAL_service_secure_url">https://bb301.heroku.com</string> -->
+	<string name="SMAL_service_secure_url">http://ec2-23-20-236-50.compute-1.amazonaws.com/mobileappconfig</string>
+	<string name="SMAL_api_key">647f187b1f8dadde3f50858af3c97172802d08d65e67ef53815bd22d703e00e0c1f4f770e5e98a8c</string>
+<!-- 	<string name="SMAL_secure_api_key">6298d4362326a619f408d53239cc7237f2a8cb8f88ef14906f2dd58139fd09989eef3ed381c87219</string> -->
+	<string name="SMAL_secure_api_key">a1ae7345507fcc08eb1417316c2f5228776c855d588281a63e13fe350e83943a</string>
+	<string name="bby_scan_url">https://www.bbyscan.com/code</string>
+	<string name="bby_scan_api_key">hS5EsKeJUAHB7FCN2tYI1lmQ</string>
+	<string name="bby_offer_url">https://bbyoffer.appspot.com</string>
+	<string name="bby_offer_api_key">FQMNv5Jr265LEI0</string>
+	
+	<string name="reviews_host">http://reviews.bestbuy.com</string>
+	<string name="remix_host">http://api.bbyremix.bestbuy.com</string>
+	<string name="secure_remix_host">https://api.remix.bestbuy.com</string>
+	<string name="remix_authorize_host">https://authorize.bestbuy.com</string>
+	<string name="remix_api_key">3v8pvwu8ny4qpa9j54z9dpmw</string>
+	<string name="openbox_api_key">9ezxj5auydb7hx47k2swr6ru</string>
+	
+	<!-- STAGING Appconfig configuration -->
+	<string name="bby_list_host_staging">http://bbylist-int.appspot.com</string>
+	<string name="bby_list_api_key_staging">android-of-elvinkind</string>
+	<string name="bby_serv_url_staging">http://bbyserv-int.appspot.com</string>
+	<string name="bby_serv_api_key_staging">recursiveawesome</string>
+	<string name="SMAL_service_url_staging">http://bb301-staging.heroku.com</string>
+	<string name="SMAL_service_secure_url_staging">https://bb301-staging.heroku.com</string>
+	<string name="SMAL_api_key_staging">d972f92f4e193575a0cdb916261ec12f6ca7b4045ae2efe29c6c4b07c32d41e79f6d312bfbb38de8</string>
+	<string name="SMAL_secure_api_key_staging">80188d6dc71ba5b3de6d76cc94d706981b83ce3bebea3f4379bf3420df133088dc75764fbcf94f3b</string>
+	<string name="bby_scan_url_staging">https://bby-mc-staging.appspot.com/code</string>	
+	<string name="bby_scan_api_key_staging">Ewn6iQbVyAFGvJpOaNDXULd3</string>
+	<string name="bby_offer_url_staging">https://bbyoffer-int.appspot.com</string>
+	<string name="bby_offer_api_key_staging">mobile ap test</string>
+	<string name="mdot_url_staging">http://m.stage.bestbuy.com/m/e/</string>
+	<string name="mdot_host_staging">http://m.stage.bestbuy.com/</string>
+	<string name="mdot_signin_url_staging">https://ssl.m.stage.bestbuy.com/m/e/</string>
+
+	
+	<!-- PRODUCTION Appconfig configuration -->
+	<string name="bby_list_host_production">https://bbylist.appspot.com</string>
+	<string name="bby_list_api_key_production">PCLhFNcZ5p2P1Tr</string>
+	<string name="bby_serv_url_production">http://bbyserv.appspot.com</string>
+	<string name="bby_serv_api_key_production">5pBWNsVQg86zyht</string>
+	<string name="SMAL_service_url_production">http://bb301.heroku.com</string>
+	<string name="SMAL_service_secure_url_production">https://bb301.heroku.com</string>
+	<string name="SMAL_api_key_production">647f187b1f8dadde3f50858af3c97172802d08d65e67ef53815bd22d703e00e0c1f4f770e5e98a8c</string>
+	<string name="SMAL_secure_api_key_production">6298d4362326a619f408d53239cc7237f2a8cb8f88ef14906f2dd58139fd09989eef3ed381c87219</string>
+	<string name="bby_scan_url_production">https://www.bbyscan.com/code</string>
+	<string name="bby_scan_api_key_production">hS5EsKeJUAHB7FCN2tYI1lmQ</string>
+	<string name="bby_offer_url_production">https://bbyoffer.appspot.com</string>
+	<string name="bby_offer_api_key_production">FQMNv5Jr265LEI0</string>
+	<string name="bby_rz_offer_image_url_prefix">https://static.bestbuy.com/myrz/web</string>
+	<!-- string name="mdot_url_production">http://dldolsapp02.na.bestbuy.com:22490/m/e/</string -->
+	<string name="mdot_url_production">http://m.bestbuy.com/m/e/</string>
+	<string name="mdot_host">http://m.bestbuy.com/</string>
+	<string name="mdot_signin_url_production">https://ssl.m.bestbuy.com/m/e/</string>
+	<string name="mkpl_pdp_service">http://m-qa3.bestbuy.com/m/r/pdp/pdpservice.jsp</string>
+	<string name="mkpl_seller_info">http://m.bestbuy.com/m/e/marketplace/sellerinfo.jsp</string>
+	<string name="eligibilty_offer_url">http://m.bestbuy.com/m/b/catalog/category.jsp?id=abcat0800000</string>
+	
+	
+	<!-- Rewardzone  -->
+	<string name="rz_login_url">https://authorize.bestbuy.com</string>
+	<!-- Exception Handler url -->
+	<string name="exception_handler_url">http://www.localtone.com/androidtrace.php</string>
+	
+	<string name="eco_rebates_url">https://bestbuy.ecorebates.com/api/search/bestbuy/productRebateSummaries</string>
+	<!-- CAPI Production -->
+	<string name="commerce_domain_production">commerce-ssl.bestbuy.com</string>
+	<string name="commerce_api_url_production">https://commerce-ssl.bestbuy.com</string>
+	<string name="use_proxy_production">false</string>
+	<string name="set_commerce_credentials_production">false</string>
+	<string name="commerce_path_production">/commerce/v0/start</string>
+	
+	<!-- CAPI Smoke -->
+	<string name="commerce_domain_smoke">commerce-ssl.bestbuy.com</string>
+	<string name="commerce_api_url_smoke">https://commerce-ssl.bestbuy.com</string>
+	<string name="use_proxy_smoke">false</string>
+	<string name="set_commerce_credentials_smoke">false</string>
+	<string name="commerce_path_smoke">/commerce/v0/start;jsessionid=.bbcomp-app41-18</string>
+
+	<!-- CAPI Stage -->
+	<string name="commerce_domain_staging">commerce-ssl.stage.bestbuy.com</string>
+	<string name="commerce_api_url_staging">https://commerce-ssl.stage.bestbuy.com</string>
+	<string name="use_proxy_staging">false</string>
+	<string name="commerce_path_staging">/commerce/v0/start</string>
+
+	
+	<!-- CAPI QA2 -->
+	<string name="commerce_domain_staging_2">commerce-qa2.bestbuy.com</string>
+	<string name="commerce_api_url_staging_2">https://commerce-qa2.bestbuy.com</string>
+	<string name="use_proxy_staging_2">true</string>
+	<string name="commerce_path_staging_2">/commerce/v0/start</string>
+		
+	<!-- CAPI QA3 -->
+	<string name="commerce_domain_staging_3">commerce-qa3.bestbuy.com</string>
+	<string name="commerce_api_url_staging_3">https://commerce-qa3.bestbuy.com</string>
+	<string name="use_proxy_staging_3">true</string>
+	<string name="commerce_path_staging_3">/commerce/v0/start</string>
+	
+	<!-- mDot QA1 -->
+	<string name="mdot_url_qa1">http://m.qa.bestbuy.com/m/e/</string>
+	<string name="mdot_host_qa1">http://m.qa.bestbuy.com/</string>
+	<string name="mdot_signin_url_qa1">https://m.qa.bestbuy.com/m/e/</string>
+	
+	<!-- mDot QA2 -->
+	<string name="mdot_url_qa2">http://m-qa2.bestbuy.com/m/e/</string>
+	<string name="mdot_host_qa2">http://m-qa2.bestbuy.com/</string>
+	<string name="mdot_signin_url_qa2">https://m-qa2.bestbuy.com/m/e/</string>
+	
+	<!-- mDot QA3 -->
+	<string name="mdot_url_qa3">http://m-qa3.bestbuy.com/m/e/</string>
+	<string name="mdot_host_qa3">http://m-qa3.bestbuy.com/</string>
+	<string name="mdot_signin_url_qa3">https://m-qa3.bestbuy.com/m/e/</string>
+	
+	<!-- mDot Host -->
+	<string name="mdot_url">http://m.bestbuy.com</string>
+
+	<!-- Action API Configuration -->
+	<string name="action_api_host">https://bbyaction.appspot.com</string>
+	<string name="action_api_key">998875312460</string>
+	
+	<!-- HEM Eco Rebates API -->
+	<string name="bestbuy_rebate_host">https://bestbuy.ecorebates.com</string>
+	
+	<!-- Stores -->
+	<string name="bestbuy_stores_host">http://stores.bestbuy.com</string>
+	<string name="storelocator_map_url">http://maps.google.com/maps</string>
+	
+	<!-- Upgrade Checker -->
+	<string name="upgrade_checker_demo_url">http://m.bbydemo.com/UpgradeCheckerService/UpgradeChecker</string>
+	<string name="upgrade_checker_prod_url">https://api.remix.bestbuy.com/v1/UpgradeCheckerService</string>
+	<string name="upgrade_checker_api_key">5spwmnuah29m3jzhes7pu4uy</string>
+	<string name="upgrade_checker_source_system">BBYAndroidApp</string>
+	
+	<!-- APP CENTER -->
+	<string name="appcenter_host">http://images.bestbuy.com/</string>
+	<string name="appcenter_terms_conditions">http://m.appolicious.com/pages/terms-of-service</string>
+	
+	<!-- Push Notification -->
+	
+<!-- 	
+ 	 <string name="push_notification_api_host">http://172.16.8.79:9080/pushNotification/api/pushnotificationservice</string>
+	<string name="push_notification_details_host">http://172.16.8.79:9080/pushNotification/api/pushnotificationservice/getNotificationList</string>
+	<string name="push_notification_api_host">http://ec2-23-20-236-50.compute-1.amazonaws.com/pushNotification/api/pushnotificationservice</string>
+	<string name="push_notification_details_host">http://ec2-23-20-236-50.compute-1.amazonaws.com/pushNotification/api/pushnotificationservice/getNotificationList</string>
+ -->	
+ 	<string name="push_notification_api_host">https://pushnotification-1582111570.us-east-1.elb.amazonaws.com/pushNotification/api/pushnotificationservice</string>
+	<string name="push_notification_details_host">https://pushnotification-1582111570.us-east-1.elb.amazonaws.com/pushNotification/api/pushnotificationservice/getNotificationList</string>
+	<string name="pn_api_key">KEzSQZdVfqMcIvAd2M0mF2Hdludu6a</string> 
+	
+	<!-- FACEBOOK -->
+	
+	<string name="facebook_post_default_link">http://www.bestbuy.com</string>
+	<string name="fb_dialog_base_url">https://m.facebook.com/dialog/</string>
+	<string name="fb_graph_base_url">https://graph.facebook.com/</string>
+	<string name="fb_restserver_url">https://api.facebook.com/restserver.php</string>
+	
+	<!-- CODE SCAN -->
+	
+	<string name="bby_iqengines_url">http://bestbuy.iqengines.com/v1.2/</string>
+	<string name="iqengines_api_url">http://api.iqengines.com/v1.2/</string>
+
+</resources>
+

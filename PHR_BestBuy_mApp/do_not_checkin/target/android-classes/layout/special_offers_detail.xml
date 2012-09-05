@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <RelativeLayout style="@style/default_style" >
+
+        <RelativeLayout style="@style/header" >
+
+            <ImageView
+                android:id="@+id/header_home"
+                style="@style/header_logo" />
+
+            <include layout="@layout/header_cart_button" />
+
+            <TextView
+                android:id="@+id/special_offers_header"
+                style="@style/text.header"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="58dip"
+                android:layout_toRightOf="@id/header_home"
+                android:gravity="center" />
+        </RelativeLayout>
+    </RelativeLayout> -->
+    
+    <include layout="@layout/header2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="150dip"
+            android:layout_height="154dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/commerce_box"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/special_offers_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="4dip"
+                android:maxHeight="150dip"
+                android:maxWidth="146dip" 
+                android:contentDescription="@string/image_content_description"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/special_offers_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/special_offers_expiration_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:textColor="#FFFF0000"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/RZGreyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/items_ship_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/special_offers_gaming_label"
+        style="@style/RZGreyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="To receive promotional offer, please add all eligible products to your cart and proceed to checkout." />
+
+    <ImageView style="@style/drop_shadow" android:contentDescription="@string/image_content_description"/>
+
+    <LinearLayout
+        android:id="@+id/special_offers_tab_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/special_offers_tab_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/offers_progress" />
+
+        <TextView
+            android:id="@+id/special_offers_tab_progress_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/loading_products_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/special_offers_tab_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:cacheColorHint="@color/transparent"
+            android:divider="#cccccc"
+            android:dividerHeight="1dip"
+            android:listSelector="@drawable/listbg" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/no_product_with_offer_text"
+            android:textColor="@color/black"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

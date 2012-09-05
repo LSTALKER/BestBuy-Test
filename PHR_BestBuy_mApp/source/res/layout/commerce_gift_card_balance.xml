@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/commerce_scrollView">
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<include layout="@layout/header2" />
+	<LinearLayout
+		style="@style/commerce_main">
+		<LinearLayout
+			style="@style/default_style"
+			android:layout_width="fill_parent"
+			android:orientation="vertical">	
+		<TextView
+			style="@style/commerce_text.h2.label"
+			android:layout_marginTop="6dip"
+			android:layout_marginBottom="8dip"
+			android:text="@string/type_giftcard_text" />
+		<LinearLayout
+			style="@style/commerce_box.white.plain"
+			android:orientation="horizontal"
+			android:layout_marginBottom="10dip">
+			<TextView
+				style="@style/commerce_text"
+				android:layout_width="100dip"
+				android:text="Number"
+				android:textStyle="bold"
+				android:layout_marginLeft="10dip" />
+			<EditText
+				style="@style/commerce_editText.invisible"
+				android:id="@+id/commerce_gift_card_balance_number"
+				android:hint="Enter Card Number"
+				android:inputType="number"
+				android:maxLength="16"
+				android:layout_width="145dip"
+				android:paddingRight="10dip" />
+			<RelativeLayout 
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+			android:id="@+id/camera_click_button"
+			android:src="@drawable/camera"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+			android:layout_centerVertical="true"
+			android:visibility="visible"
+			android:contentDescription="@string/image_content_description"
+			 />
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout
+			style="@style/commerce_box.white.plain"
+			android:orientation="horizontal"
+			android:layout_marginBottom="10dip">
+			<TextView
+				style="@style/commerce_text"
+				android:layout_width="100dip"
+				android:text="PIN"
+				android:textStyle="bold"
+				android:layout_marginLeft="10dip" />
+			<EditText
+				style="@style/commerce_editText.invisible"
+				android:id="@+id/commerce_gift_card_balance_pin"
+				android:hint="Enter PIN"
+				android:inputType="number"
+				android:password="true"
+				android:maxLength="4"
+				android:layout_width="145dip"
+				android:paddingRight="10dip" />
+
+		</LinearLayout>
+		<RelativeLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dip" 		    
+		    >
+		<Button
+			style="@style/button_blue_3"
+			android:id="@+id/commerce_gift_card_balance_save"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:enabled="false"
+			/>
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/check_gift_balance_text"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:id="@+id/gift_text"
+			android:paddingLeft="30dip"
+			android:layout_marginLeft="5dip"
+			android:layout_centerInParent="true"
+		    />
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/gift_text"
+			android:layout_marginRight="-30dip"
+			android:src="@drawable/gif_box"
+			android:layout_marginTop="12dip"
+			android:contentDescription="@string/image_content_description"
+			/>
+		</RelativeLayout>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/commerce_gc"
+			android:layout_gravity="center_horizontal"
+			android:contentDescription="@string/image_content_description" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

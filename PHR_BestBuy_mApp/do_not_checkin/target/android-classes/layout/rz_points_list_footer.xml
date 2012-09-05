@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/_bottom_linlay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#e8e8e8"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#cccccc" 
+        android:id="@+id/divider_3"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/rz_silver_click"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/rzsilver"
+        android:gravity="center"
+        android:text="@string/see_rz_sliver_status_text"
+        android:textColor="@color/white"
+        android:textSize="13dip" 
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a8a8" />
+
+    <TextView
+        android:id="@+id/reward_zone_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dip"
+        android:text="Sign out silvertestbby@gmail.com"
+        android:textColor="#004472"
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </TextView>
+
+</LinearLayout>
+

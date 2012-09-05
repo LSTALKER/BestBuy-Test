@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/header" >
+
+        <ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo" 
+			android:contentDescription="@string/image_content_description"/>
+
+        <TextView
+            style="@style/text.header"
+            android:text="@string/preferred_cat_title" />
+
+        <Button
+            android:id="@+id/done_btn"
+            style="@style/button_blue_2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dip"
+            android:text="@string/done_text" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/commerce_scrollView"
+        android:fillViewport="true" >
+
+        <LinearLayout style="@style/commerce_main" >
+
+            <LinearLayout
+                android:id="@+id/preferred_categories_layout"
+                style="@style/commerce_box.white"
+                android:layout_marginBottom="10dip"
+                android:orientation="vertical" >
+
+                <!-- preferred categories inserted here -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

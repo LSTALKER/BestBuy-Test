@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<include layout="@layout/rz_header" />
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:padding="5dip"
+	    android:background="@drawable/rz_cert_flick_bg"
+		>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/num_of_page"
+	        android:textSize="18dip" 
+	        android:layout_centerInParent="true"
+	        android:textStyle="bold"
+	        android:textColor="@color/black"
+	        />
+	   	<RelativeLayout
+		    android:layout_width="50dip"
+		    android:layout_height="wrap_content" 
+		   	android:layout_alignParentLeft="true"
+		   	android:layout_marginLeft="35dip"
+		   	android:layout_centerVertical="true"
+		   	android:id="@+id/left_arrow"
+			>
+			<ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/rz_cert_flick_left_active"
+		        android:layout_centerInParent="true"
+		        android:contentDescription="@string/image_content_description"
+	        />
+		</RelativeLayout>
+		<RelativeLayout
+		    android:layout_width="50dip"
+		    android:layout_height="wrap_content"
+		   	android:id="@+id/right_arrow"
+		   	android:layout_alignParentRight="true"
+		   	android:layout_marginRight="35dip"
+		   	android:layout_centerVertical="true"
+			>
+			<ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/rz_cert_flick_right_active"
+		        android:layout_centerInParent="true"
+		        android:contentDescription="@string/image_content_description"
+	        />
+		</RelativeLayout>
+	  
+	</RelativeLayout>
+	<RelativeLayout 
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent" 
+	    >
+	   	<LinearLayout 
+	   	    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent" 
+	    	android:id="@+id/singleCertView"
+	    	android:visibility="gone"
+	   	/>
+	  	<com.bestbuy.android.rewardzone.activity.helper.HorizontalPager
+	        android:id="@+id/pager"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone" >
+    	</com.bestbuy.android.rewardzone.activity.helper.HorizontalPager> 
+	</RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#f7f7f7">
+	<include
+		layout="@layout/rz_header" />
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#f7f7f7">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dip">
+				<RelativeLayout
+					android:layout_width="130dip"
+					android:layout_marginLeft="10dip"
+					android:layout_height="fill_parent">
+					<ImageView
+						android:id="@+id/reward_zone_offer_image"
+						android:layout_width="130dip"
+						android:layout_height="90dip"
+						android:textSize="60sp"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:scaleType="fitCenter" 
+						android:contentDescription="@string/image_content_description"/>
+				</RelativeLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:paddingBottom="10dip"
+					android:paddingLeft="10dip"
+					android:paddingRight="10dip"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TextView
+						android:text="@string/offer_title"
+						android:textStyle="bold"
+						android:id="@+id/reward_zone_offer_title"
+						android:textColor="#2f2a2b"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp" />
+					<TextView
+						android:id="@+id/reward_zone_offer_expiration"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:textColor="#FFbf2943"
+						android:textSize="12sp" 
+						android:textStyle="bold"/>
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:layout_width="wrap_content"
+				android:id="@+id/rz_offer_label"
+				android:layout_height="wrap_content"
+				style="@style/RZGreyText.Medium"
+				android:paddingLeft="20dip"
+				android:paddingTop="10dip"
+				android:singleLine="true"
+				android:text="@string/offer_details_title" 
+				android:visibility="gone"/>
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_margin="10dip"
+				android:id="@+id/rz_certificate_rl_whitebox_view_details_click"
+				android:layout_height="wrap_content"
+				style="@style/commerce_box.white">
+				<TextView
+					style="@style/RZBlackText.SmallMedium"
+					android:singleLine="true"
+					android:padding="10dip"
+					android:layout_centerVertical="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="View Offer At Bestbuy.com" />
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/rz_certificates_header_right_arrow"
+					android:src="@drawable/carrot_r"
+					android:padding="10dip"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true" 
+					android:contentDescription="@string/image_content_description"/>
+			</RelativeLayout>
+			<TextView
+				android:paddingLeft="20dip"
+				style="@style/RZGreyText.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:text="@string/offer_details_title" 
+				android:id="@+id/rz_offer_rl_whitebox_label" />
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:id="@+id/rz_offer_rl_whitebox_click"
+				android:orientation="vertical"
+				android:layout_weight="1.0"
+				android:layout_margin="10dip"
+				android:layout_height="fill_parent"
+				style="@style/commerce_box.white">
+				<TextView
+					android:id="@+id/reward_zone_offer_short_copy"
+					style="@style/commerce_text"
+					android:padding="10dip" />
+				<TextView
+					android:id="@+id/reward_zone_offer_long_copy"
+					style="@style/commerce_text"
+					android:padding="10dip"
+					android:text="" />
+				<!-- <View
+					android:id="@+id/reward_zone_offer_short_copy_line" 
+					style="@style/horizontal_line"/>
+				<TextView
+					android:id="@+id/reward_zone_legal_terms"
+					style="@style/commerce_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="10dip"
+					android:textColor="#5a5dff"
+					android:textStyle="bold"
+					android:visibility="gone"
+					android:text="Legal Terms"></TextView>-->
+			</LinearLayout>
+			<TextView android:id="@+id/reward_zone_legal_terms"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:textSize="15sp" android:paddingLeft="12dip"  android:layout_marginBottom ="15dip"
+				android:paddingTop="7dip" android:paddingBottom="7dip"
+				android:paddingRight="12dip" android:layout_marginTop="10dip"
+				android:drawableRight="@drawable/carrot_r" android:textColor="#231f20"
+				android:textStyle="bold" android:text="Terms &amp; Conditions"
+				style="@style/commerce_box.yellow" android:layout_margin="10dip"></TextView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

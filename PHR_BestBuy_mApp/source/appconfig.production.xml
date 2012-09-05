@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="bby_list_host">https://bbylist.appspot.com</string>
+	<string name="bby_list_api_key">PCLhFNcZ5p2P1Tr</string>
+	<string name="bby_serv_url">http://bbyserv.appspot.com</string>
+	<string name="bby_serv_api_key">5pBWNsVQg86zyht</string>
+	<string name="SMAL_service_url">http://bb301.heroku.com</string>
+	<string name="SMAL_service_secure_url">https://bb301.heroku.com</string>
+	<string name="SMAL_api_key">647f187b1f8dadde3f50858af3c97172802d08d65e67ef53815bd22d703e00e0c1f4f770e5e98a8c</string>
+	<string name="SMAL_secure_api_key">6298d4362326a619f408d53239cc7237f2a8cb8f88ef14906f2dd58139fd09989eef3ed381c87219</string>
+	<string name="bby_scan_url">https://www.bbyscan.com/code</string>
+	<string name="bby_scan_api_key">hS5EsKeJUAHB7FCN2tYI1lmQ</string>
+	<string name="bby_offer_url">https://bbyoffer.appspot.com</string>
+	<string name="bby_offer_api_key">FQMNv5Jr265LEI0</string>
+</resources> 

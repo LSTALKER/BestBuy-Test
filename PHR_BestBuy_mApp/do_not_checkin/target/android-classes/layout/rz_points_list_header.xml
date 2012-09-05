@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/_top_linlay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8e8e8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/reward_zone_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:textColor="#7a7a7a"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reward_zone_member_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reward_zone_member_name"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reward_zone_show_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dip"
+            android:background="@drawable/rz_show_card"
+            android:gravity="center_vertical"
+            android:text="Show My Card"
+            android:textColor="@color/white"
+            android:textSize="12dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rz_rl_whitebox"
+            style="@style/commerce_box.white.noclick_rz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reward_zone_member_number" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+              	>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/reward_zone_total_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#003c6c"
+                        android:textSize="30dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dip"
+                        android:text="points"
+                        android:textColor="#003c6c"
+                        android:textSize="12dip"
+                        android:textStyle="bold"
+                        android:paddingTop="10dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reward_zone_sub_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/divider_1" 
+                    android:contentDescription="@string/image_content_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rz_validation"
+                    android:textColor="@color/black"
+                    android:textSize="10dip"
+                    android:textStyle="italic"
+                    android:id="@+id/rz_points_validation"/>
+
+                <TextView
+                    android:id="@+id/convert_rz_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rz_link"
+                    android:textColor="@color/black"
+                    android:textSize="10dip"
+                    android:textStyle="italic"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a8a8" />
+
+    <RelativeLayout
+        android:id="@+id/rz_rl_avalcertificates"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="7dip" >
+
+        <TextView
+            android:id="@+id/rz_tv_avalcerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Reward Certificates"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rz_tv_cert_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:textColor="#be2640"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a7a8a8" /> 
+
+</LinearLayout>

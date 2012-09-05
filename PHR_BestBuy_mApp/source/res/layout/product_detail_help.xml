@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout
+		style="@style/header">
+		<ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo" 
+			android:contentDescription="@string/image_content_description"/>
+		<TextView
+			android:text="Help"
+			style="@style/text.header" />
+		<include layout="@layout/header_cart_button" />
+	</RelativeLayout>
+
+	<ScrollView android:id="@+id/main_scroll"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="#fff">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:background="#fff" android:textColor="#aaa">
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+			
+			

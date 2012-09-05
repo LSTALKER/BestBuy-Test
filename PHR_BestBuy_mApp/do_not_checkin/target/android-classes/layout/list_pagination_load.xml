@@ -1,0 +1,24 @@
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="#EEE"
+	android:textColor="#333"
+	android:padding="10dip">
+	<ProgressBar
+		android:id="@+id/pagination_progress_promotions"
+		style="@style/default_style_wrap"
+		android:layout_gravity="center"
+		android:padding="5dip" />
+	<TextView
+		android:id="@+id/last_row_description"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textColor="#333"
+		android:text="@string/loading_more_text"
+		android:padding="20dip"
+		android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="54dip"
+	android:paddingLeft="10dip" android:orientation="horizontal"
+	android:paddingRight="10dip" android:gravity="center_vertical" 
+	android:background="@drawable/commerce_box_middle">
+
+	<!-- <TextView android:id="@+id/category_count" android:background="@drawable/headcount_bg"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:text="10" android:textSize="13dip" android:gravity="center"
+		android:textColor="#ffffff"  android:visibility="gone"/>-->
+
+	<TextView android:id="@+id/category_name"
+		android:layout_height="54dip" android:layout_marginLeft="10dip"
+		android:textColor="#000000" android:layout_width="fill_parent"
+		android:text="CategoryName" android:textStyle="bold" android:textSize="16dip"
+		android:drawableRight="@drawable/carrot_r" android:gravity="center_vertical" />
+
+</LinearLayout>

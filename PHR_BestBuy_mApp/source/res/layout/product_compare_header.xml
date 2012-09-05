@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/default_style"
+	android:id="@+id/product_compare_header_layout"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:focusableInTouchMode="true"
+	android:focusable="true">
+	<LinearLayout
+		style="@style/default_style"
+		android:orientation="horizontal"
+		android:baselineAligned="false">
+		<RelativeLayout
+			android:id="@+id/product_compare_left"
+			style="@style/default_style"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:padding="10dip">
+			<RelativeLayout
+				android:id="@+id/product_compare_left_info"
+				style="@style/default_style">
+				<ImageView
+					android:id="@+id/product_compare_left_image"
+					style="@style/commerce_text.bold"
+					android:src="@drawable/icon_qr_code"
+					android:layout_centerHorizontal="true"
+					android:paddingBottom="15dip"
+					android:layout_height="100dip"
+					android:layout_width="100dip" 
+					android:contentDescription="@string/image_content_description"/>
+				<RelativeLayout
+					android:id="@+id/product_compare_left_overview"
+					style="@style/default_style"
+					android:layout_below="@id/product_compare_left_image">
+					<TextView
+						android:id="@+id/product_compare_left_text_model"
+						android:layout_below="@id/product_compare_left_image"
+						style="@style/commerce_text.bold"
+						android:text="@string/model_text" />
+					<TextView
+						android:id="@+id/product_compare_left_model"
+						android:layout_toRightOf="@id/product_compare_left_text_model"
+						android:layout_below="@+id/product_compare_left_image"
+						style="@style/commerce_text"
+						android:singleLine="true" />
+					<TextView
+						android:id="@+id/product_compare_left_text_sku"
+						android:layout_below="@id/product_compare_left_model"
+						style="@style/commerce_text.bold"
+						android:text="SKU: " />
+					<TextView
+						android:id="@+id/product_compare_left_sku"
+						android:layout_toRightOf="@id/product_compare_left_text_sku"
+						android:layout_below="@+id/product_compare_left_model"
+						style="@style/commerce_text"
+						/>
+					<TextView
+						android:id="@+id/product_compare_left_text_price"
+						android:layout_below="@id/product_compare_left_text_sku"
+						style="@style/commerce_text.bold"
+						android:text="@string/price_title" />
+					<TextView
+						android:id="@+id/product_compare_left_price"
+						android:layout_toRightOf="@id/product_compare_left_text_price"
+						android:layout_below="@+id/product_compare_left_sku"
+						style="@style/commerce_text.bold"
+						android:textColor="#FFC02A45"
+						/>
+					<ImageView
+						android:id="@+id/product_compare_left_review_stars"
+						android:layout_below="@id/product_compare_left_price"
+						style="@style/default_style_wrap"
+						android:src="@drawable/halfstars4"
+						android:contentDescription="@string/image_content_description" />
+					<TextView
+						android:id="@+id/product_compare_left_review_score"
+						android:layout_below="@id/product_compare_left_price"
+						android:layout_toRightOf="@id/product_compare_left_review_stars"
+						style="@style/commerce_text.blue"
+						android:paddingLeft="10dip"
+						android:textStyle="bold" />
+				</RelativeLayout>
+			</RelativeLayout>
+			<Button
+				android:id="@+id/product_compare_left_button_remove"
+				android:layout_below="@id/product_compare_left_info"
+				style="@style/button_red"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/remove_item_text" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/product_compare_right"
+			style="@style/default_style"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:padding="10dip">
+			<RelativeLayout
+				android:id="@+id/product_compare_right_info"
+				style="@style/default_style">
+				<ImageView
+					android:id="@+id/product_compare_right_image"
+					style="@style/commerce_text.bold"
+					android:src="@drawable/icon_qr_code"
+					android:layout_centerHorizontal="true"
+					android:paddingBottom="15dip"
+					android:layout_height="100dip"
+					android:layout_width="100dip" 
+					android:contentDescription="@string/image_content_description"/>
+				<RelativeLayout
+					android:id="@+id/product_compare_right_overview"
+					style="@style/default_style"
+					android:layout_below="@id/product_compare_right_image">
+					<TextView
+						android:id="@+id/product_compare_right_text_model"
+						android:layout_below="@id/product_compare_right_image"
+						style="@style/commerce_text.bold"
+						android:text="@string/model_text" />
+					<TextView
+						android:id="@+id/product_compare_right_model"
+						android:layout_toRightOf="@id/product_compare_right_text_model"
+						android:layout_below="@+id/product_compare_right_image"
+						style="@style/commerce_text"
+						android:singleLine="true" />
+					<TextView
+						android:id="@+id/product_compare_right_text_sku"
+						android:layout_below="@id/product_compare_right_model"
+						style="@style/commerce_text.bold"
+						android:text="SKU: " />
+					<TextView
+						android:id="@+id/product_compare_right_sku"
+						android:layout_toRightOf="@id/product_compare_right_text_sku"
+						android:layout_below="@+id/product_compare_right_model"
+						style="@style/commerce_text"
+						/>
+					<TextView
+						android:id="@+id/product_compare_right_text_price"
+						android:layout_below="@id/product_compare_right_text_sku"
+						style="@style/commerce_text.bold"
+						android:text="@string/price_title" />
+					<TextView
+						android:id="@+id/product_compare_right_price"
+						android:layout_toRightOf="@id/product_compare_right_text_price"
+						android:layout_below="@+id/product_compare_right_sku"
+						style="@style/commerce_text.bold"
+						android:textColor="#FFC02A45"
+						/>
+					<ImageView
+						android:id="@+id/product_compare_right_review_stars"
+						android:layout_below="@id/product_compare_right_price"
+						style="@style/default_style_wrap"
+						android:src="@drawable/halfstars4" 
+						android:contentDescription="@string/image_content_description"/>
+					<TextView
+						android:id="@+id/product_compare_right_review_score"
+						android:layout_below="@id/product_compare_right_price"
+						android:layout_toRightOf="@id/product_compare_right_review_stars"
+						style="@style/commerce_text.blue"
+						android:paddingLeft="10dip"
+						android:textStyle="bold" />
+				</RelativeLayout>
+			</RelativeLayout>
+			<ImageView
+				android:id="@+id/product_compare_right_default_image"
+				style="@style/default_style_wrap"
+				android:layout_alignParentTop="true"
+				android:src="@drawable/img_compare_default" 
+				android:contentDescription="@string/image_content_description"/>
+			<TextView
+				android:id="@+id/product_compare_right_default_text"
+				style="@style/commerce_text.gray"
+				android:layout_below="@id/product_compare_right_default_image"
+				android:text="Select to compare another item"
+				android:gravity="center" />
+			<Button
+				android:id="@+id/product_compare_right_button_remove"
+				android:layout_below="@id/product_compare_right_info"
+				style="@style/button_red"
+				android:layout_width="fill_parent"
+				android:text="@string/remove_item_text" 
+				android:visibility="visible" />
+			<Button
+				android:id="@+id/product_compare_right_button_scan"
+				style="@style/button_scan"
+				android:src="@drawable/btn_scan"
+				android:layout_marginRight="5dip"
+				android:layout_below="@id/product_compare_right_default_text"
+				android:state_enabled="true" />
+			<Button
+				android:id="@+id/product_compare_right_button_browse"
+				style="@style/button_browse"
+				android:layout_toRightOf="@id/product_compare_right_button_scan"
+				android:layout_below="@id/product_compare_right_default_text"
+				android:layout_marginLeft="5dip" />
+		</RelativeLayout>
+	</LinearLayout>
+	<View style="@style/horizontal_line" />
+	<LinearLayout
+		android:id="@+id/product_compare_header_whats_different"
+		style="@style/default_style"
+		android:orientation="vertical">
+		<TextView
+			style="@style/commerce_text.bold"
+			android:text="What's Different"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:paddingTop="10dip"
+			android:paddingBottom="5dip" />	
+		<View style="@style/horizontal_line" />
+	</LinearLayout>
+	<ProgressBar
+		android:id="@+id/product_compare_loading"
+		style="@style/default_style_wrap"
+		android:layout_gravity="center" />
+</LinearLayout>

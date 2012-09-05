@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules>
+	<module>
+		<module_name>CAPI</module_name>
+		<module_title>Commmerce Environment</module_title>
+		<isproxy>false</isproxy>
+		<environment>
+			<name>PROD</name>
+			<title>CAPI Production</title>
+			<host>https://commerce-ssl.bestbuy.com</host>
+			<domain>commerce-ssl.bestbuy.com</domain>
+			<path>/commerce/v0/start</path>
+		</environment>
+		<environment>
+		    <name>SMOK</name>
+			<title>Server A(CAPI Smoke Test)</title>
+			<host>https://commerce-ssl.bestbuy.com</host>
+			<domain>commerce-ssl.bestbuy.com</domain>
+			<path>/commerce/v0/start;jsessionid=.bbcomp-app41-18</path>
+		</environment>
+		<environment>
+		    <name>STA1</name>
+			<title>CAPI Stage</title>
+			<host>https://commerce-ssl.stage.bestbuy.com</host>
+			<domain>commerce-ssl.stage.bestbuy.com</domain>
+			<path>/commerce/v0/start</path>
+		</environment>
+		<environment>
+		    <name>STA2</name>
+			<title>CAPI QA2</title>
+			<host>https://commerce-qa2.bestbuy.com</host>
+			<domain>commerce-qa2.bestbuy.com</domain>
+			<path>/commerce/v0/start</path>
+		</environment>
+		<environment>
+		    <name>STA3</name>
+			<title>CAPI QA3</title>
+			<host>https://commerce-qa3.bestbuy.com</host>
+			<domain>commerce-qa3.bestbuy.com</domain>
+			<path>/commerce/v0/start</path>
+		</environment>
+	</module>
+	<module>
+		<module_name>SMAL</module_name>
+		<module_title>SMAL</module_title>
+		<isproxy>false</isproxy>
+		<environment>
+		    <name>PROD</name>
+			<title>SMAL Production</title>
+			<host>http://bb301.heroku.com</host>
+			<api_key>647f187b1f8dadde3f50858af3c97172802d08d65e67ef53815bd22d703e00e0c1f4f770e5e98a8c</api_key>
+<!-- 			<secure_host>https://bb301.heroku.com</secure_host> -->
+<!-- 			<secure_api_key>6298d4362326a619f408d53239cc7237f2a8cb8f88ef14906f2dd58139fd09989eef3ed381c87219</secure_api_key> -->
+			<secure_host>http://ec2-23-20-236-50.compute-1.amazonaws.com/mobileappconfig</secure_host>
+			<secure_api_key>a1ae7345507fcc08eb1417316c2f5228776c855d588281a63e13fe350e83943a</secure_api_key>
+		</environment>
+		<environment>
+		    <name>STAG</name>
+			<title>SMAL Staging</title>
+			<host>http://bb301-staging.heroku.com</host>
+			<secure_host>https://bb301-staging.heroku.com</secure_host>
+			<api_key>d972f92f4e193575a0cdb916261ec12f6ca7b4045ae2efe29c6c4b07c32d41e79f6d312bfbb38de8</api_key>
+			<secure_api_key>80188d6dc71ba5b3de6d76cc94d706981b83ce3bebea3f4379bf3420df133088dc75764fbcf94f3b</secure_api_key>
+		</environment>
+	</module>
+	<module>
+		<module_name>BBYO</module_name>
+		<module_title>BBYOffer</module_title>
+		<isproxy>false</isproxy>
+		<environment>
+		    <name>PROD</name>
+			<title>BBYOffer Production</title>
+			<host>https://bbyoffer.appspot.com</host>
+			<api_key>FQMNv5Jr265LEI0</api_key>
+		</environment>
+		<environment>
+		    <name>STAG</name>
+			<title>BBYOffer QA</title>
+			<host>https://bbyoffer-int.appspot.com</host>
+			<api_key>mobile ap test</api_key>
+		</environment>
+	</module>
+	<module>
+		<module_name>MDOT</module_name>
+		<module_title>mDot</module_title>
+		<isproxy>false</isproxy>
+		<environment>
+		    <name>PROD</name>
+			<title>mDot Production</title>
+			<host>http://m.bestbuy.com/m/e/</host>
+			<secure_host>https://ssl.m.bestbuy.com/m/e/</secure_host>
+		</environment>
+		<environment>
+		    <name>STAG</name>
+			<title>mDot Staging</title>
+			<host>http://m.stage.bestbuy.com/m/e/</host>
+			<secure_host>https://ssl.m.stage.bestbuy.com/m/e/</secure_host>
+		</environment>
+		<environment>
+		    <name>MQA1</name>
+			<title>mDot QA1</title>
+			<host>http://m.qa.bestbuy.com/m/e/</host>
+			<secure_host>https://m.qa.bestbuy.com/m/e/</secure_host>
+		</environment>
+		<environment>
+		    <name>MQA2</name>
+			<title>mDot QA2</title>
+			<host>http://m-qa2.bestbuy.com/m/e/</host>
+			<secure_host>https://m-qa2.bestbuy.com/m/e/</secure_host>
+		</environment>
+		<environment>
+		    <name>MQA3</name>
+			<title>mDot QA3</title>
+			<host>http://m-qa3.bestbuy.com/m/e/</host>
+			<secure_host>https://m-qa3.bestbuy.com/m/e/</secure_host>
+		</environment>
+	</module>
+	<common>
+	    <proxy>
+	        <host>usproxy.na.bestbuy.com</host>
+	        <domain>na</domain>
+	        <username>a188312</username>
+	        <password>Awesome3</password>
+	    </proxy>
+	</common>
+</modules>
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/product_compare_row"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textColor="#333"
+	android:background="@android:color/transparent">
+	<LinearLayout
+		style="@style/default_style"
+		android:background="@color/light_gray"
+		android:orientation="vertical">
+		<TextView
+			style="@style/commerce_text.gray"
+			android:id="@+id/product_compare_row_header"
+			android:layout_gravity="center"
+			android:textStyle="bold"
+			android:paddingTop="5dip" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:paddingRight="10dip">
+			<TextView
+				android:id="@+id/product_compare_row_left_detail"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#333"
+				android:gravity="center" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:paddingLeft="10dip">
+			<TextView
+				android:id="@+id/product_compare_row_right_detail"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#333"
+				android:gravity="center" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

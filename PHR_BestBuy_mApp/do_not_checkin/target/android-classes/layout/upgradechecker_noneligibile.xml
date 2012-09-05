@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="@string/upgrade_checker_title"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        style="@style/default_style"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="330dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lin_at_t_image_logo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/light_gray"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/carrier_Logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="18dip" 
+                    android:contentDescription="@string/image_content_description"/>
+
+                <ImageButton
+                    android:id="@+id/upgrade_chkr_at_t_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@+id/carrier_Logo"
+                    android:background="@drawable/at_t_text" 
+                    android:contentDescription="@string/image_content_description"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lin_at_t_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray" >
+
+                <TextView
+                    android:id="@+id/good_news_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="7dip"
+                    android:layout_marginTop="10dip"
+                    android:paddingRight="4dip"
+                    android:text="@string/good_news_unsucess"
+                    android:textColor="@color/default_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/good_news_text_meaning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/good_news_text"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="2"
+                    android:lineSpacingExtra="2dip"
+                    android:paddingTop="10dip"
+                    android:text="@string/good_news_meaning"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:typeface="sans"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray" >
+
+                <RelativeLayout
+                    android:id="@+id/upgrade_at_t_Phone_number"
+                    style="@style/commerce_box.white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="9dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/at_t_terms_ph_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="13dip"
+                        android:paddingLeft="17dip"
+                        android:text="@string/phone_title"
+                        android:textColor="@color/default_text"
+                        android:textSize="16dip"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/edit_at_t_term_ph_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/at_t_terms_ph_number"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="13dip"
+                        android:layout_toRightOf="@id/at_t_terms_ph_number"
+                        android:maxLength="12"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textSize="16dip" 
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/at_t_term_full_eligibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/at_t_terms_ph_number"
+                        android:paddingLeft="17dip"
+                        android:paddingTop="5dip"
+                        android:text="@string/full_eligibility_text"
+                        android:textColor="@color/default_text"
+                        android:textSize="16dip"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/edit_at_t_term_eligibility"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/at_t_term_full_eligibility"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="19dip"
+                        android:layout_toRightOf="@id/at_t_term_full_eligibility"
+                        android:maxLength="12"
+                        android:paddingLeft="10dip"
+                        android:singleLine="true"
+                        android:textSize="16dip" 
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/at_t_term_contract_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/at_t_term_full_eligibility"
+                        android:layout_marginBottom="13dip"
+                        android:paddingLeft="17dip"
+                        android:paddingTop="5dip"
+                        android:text="@string/contract_enddate_title"
+                        android:textColor="@color/default_text"
+                        android:textSize="16dip"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/at_t_term_contract_end_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/at_t_term_contract_detail"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dip"
+                        android:layout_toRightOf="@id/at_t_term_contract_detail"
+                        android:maxLength="12"
+                        android:paddingLeft="9dip"
+                        android:singleLine="true"
+                        android:textSize="16dip" 
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/will_call_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@color/light_gray"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/will_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="17dip"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="17dip"
+                    android:text="@string/remind_me_eligible_text"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="4dip"
+                    android:lineSpacingExtra="2dip"
+                    android:text="@string/contact_you"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/textme_and_callme_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="2dip" >             
+               <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginRight="20dip" 
+		            android:layout_marginTop="14dip">
+		            
+		            <Button
+		                android:id="@+id/upgrade_at_t_text_me"
+		                android:layout_width="0dip"
+		                android:layout_height="40dip"
+		                android:layout_marginRight="9dip"
+		                android:layout_weight=".5"
+		                android:background="@drawable/btn_blue_2"
+		                android:text="Text Me"
+		                android:textColor="@color/white"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+		
+		            <Button
+		              	android:id="@+id/upgrade_at_t_call_me"
+		                android:layout_width="0dip"
+		                android:layout_height="40dip"
+		                android:layout_weight=".5"
+		                android:background="@drawable/btn_blue_2"
+		                android:text="@string/call_me_text"
+		                android:textColor="@color/white"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+	            </LinearLayout>
+	            <Button
+			    	android:id="@+id/change_to_text_me"
+			        android:layout_width="fill_parent"
+			        android:layout_height="40dip"
+			        android:layout_marginBottom="19dip"
+		            android:layout_marginLeft="10dip"
+		            android:layout_marginRight="10dip"
+		            android:layout_marginTop="14dip"
+			        android:layout_weight="1"
+			        android:background="@drawable/btn_blue_2"
+			        android:text="@string/change_text_me_title" 
+			        android:textColor= "@color/white"
+			        android:textSize="14sp"
+			        android:textStyle="bold" 
+			        android:visibility="gone"
+			        /> 
+			     <Button
+			    	android:id="@+id/change_to_call_me"
+			        android:layout_width="fill_parent"
+			        android:layout_height="40dip"
+			        android:layout_marginBottom="19dip"
+		            android:layout_marginLeft="10dip"
+		            android:layout_marginRight="10dip"
+		            android:layout_marginTop="14dip"
+			        android:layout_weight="1"
+			        android:background="@drawable/btn_blue_2"
+			        android:text="@string/change_call_me_title" 
+			        android:textColor= "@color/white"
+			        android:textSize="14sp"
+			        android:textStyle="bold" 
+			        android:visibility="gone"
+			        />             
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/terms_link_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray" >
+
+                <TextView
+                    android:id="@+id/terms_lnik"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="18dip"
+                    android:lineSpacingExtra="2dip"
+                    android:linksClickable="true"
+                    android:paddingRight="10dip"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp"
+                    android:typeface="sans" />
+            </LinearLayout>
+            <!-- android:text="@string/eligibility_date" -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

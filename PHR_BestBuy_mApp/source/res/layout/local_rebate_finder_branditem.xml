@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/brand_ChkTextView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="@drawable/btn_tick_check"
+    android:gravity="center_vertical"
+    android:textColor="@color/dark_black"
+    android:textSize="14sp"
+    android:textStyle="bold" />

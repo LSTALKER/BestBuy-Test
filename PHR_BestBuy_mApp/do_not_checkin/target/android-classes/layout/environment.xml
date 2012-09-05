@@ -1,0 +1,241 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/commerce_scrollView">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<RelativeLayout
+			style="@style/header">
+			<TextView
+				android:text="@string/test_envi_text"
+				style="@style/text.header" />
+		</RelativeLayout>
+		<LinearLayout
+			style="@style/commerce_main">
+			<TextView
+				android:layout_width="wrap_content"
+				android:id="@+id/textView1"
+				style="@style/commerce_text.h2.label.gray"
+				android:text="@string/proxy_settings_text"
+				android:layout_marginTop="10dip"
+				android:layout_height="wrap_content" />
+			<LinearLayout
+				style="@style/commerce_box.white"
+				android:padding="10dip"
+				android:orientation="vertical">
+				<LinearLayout
+					style="@style/default_style"
+					android:orientation="horizontal">
+					<CheckBox
+						android:id="@+id/environment_proxy_toggle"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal" />
+					<TextView
+						style="@style/commerce_text"
+						android:text="Enable proxy" />
+				</LinearLayout>
+				<EditText
+					android:id="@+id/environment_proxy_host"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Host" />
+				<EditText
+					android:id="@+id/environment_proxy_domain"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Domain" />
+				<EditText
+					android:id="@+id/environment_proxy_username"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Username" />
+				<EditText
+					android:id="@+id/environment_proxy_password"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Password" />
+			</LinearLayout>
+			<!--  CAPI -->
+			<TextView
+				android:layout_width="wrap_content"
+				android:id="@+id/textView1"
+				style="@style/commerce_text.h2.label.gray"
+				android:text="Commerce Environment"
+				android:layout_marginTop="10dip"
+				android:paddingLeft="5dip"
+				android:layout_height="wrap_content" />
+			<RadioGroup
+				android:id="@+id/environment_capi"
+				android:orientation="vertical"
+				style="@style/commerce_box.white">
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_capi_production"
+					android:text="CAPI Production" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_capi_smoke"
+					android:text="Server A (CAPI Smoke Test)" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_capi_staging"
+					android:text="CAPI Stage" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_capi_staging_2"
+					android:text="CAPI QA2" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_capi_staging_3"
+					android:text="CAPI QA3" />
+			</RadioGroup>
+
+			<!-- SMAL -->
+			<TextView
+				android:layout_width="wrap_content"
+				style="@style/commerce_text.h2.label.gray"
+				android:text="SMAL"
+				android:layout_marginTop="10dip"
+				android:paddingLeft="5dip"
+				android:layout_height="wrap_content" />
+			<RadioGroup
+				android:id="@+id/environment_smal"
+				android:orientation="vertical"
+				style="@style/commerce_box.white">
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_smal_production"
+					android:text="SMAL Production" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_smal_staging"
+					android:text="SMAL Staging" />
+			</RadioGroup>
+
+			<!--  BBYOffer -->
+			<TextView
+				android:layout_width="wrap_content"
+				style="@style/commerce_text.h2.label.gray"
+				android:text="BBYOffer"
+				android:layout_marginTop="10dip"
+				android:paddingLeft="5dip"
+				android:layout_height="wrap_content" />
+			<RadioGroup
+				android:id="@+id/environment_bbyoffer"
+				android:orientation="vertical"
+				style="@style/commerce_box.white">
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_bbyoffer_production"
+					android:text="BBYOffer Production" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_bbyoffer_qa"
+					android:text="BBYOffer QA" />
+			</RadioGroup>
+			
+			<!--  mDot -->
+			<TextView
+				android:layout_width="wrap_content"
+				style="@style/commerce_text.h2.label.gray"
+				android:text="mDot"
+				android:layout_marginTop="10dip"
+				android:paddingLeft="5dip"
+				android:layout_height="wrap_content" />
+			<RadioGroup
+				android:id="@+id/environment_bbyoffer"
+				android:orientation="vertical"
+				style="@style/commerce_box.white">
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_mdot_production"
+					android:text="mDot Production" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_mdot_staging"
+					android:text="mDot Staging" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_mdot_qa1"
+					android:text="mDot QA1" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_mdot_qa2"
+					android:text="mDot QA2" />
+				<View
+					style="@style/horizontal_line" />
+				<RadioButton
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="#000"
+					android:checked="false"
+					android:id="@+id/environment_mdot_qa3"
+					android:text="mDot QA3" />
+			</RadioGroup>
+			<Button
+				android:id="@+id/environment_save"
+				style="@style/button_blue_3"
+				android:text="Save changes"
+				android:layout_gravity="right" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

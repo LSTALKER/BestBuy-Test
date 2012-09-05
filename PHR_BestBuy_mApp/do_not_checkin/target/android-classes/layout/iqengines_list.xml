@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#fff200">
+		<RelativeLayout
+			style="@style/header">
+			<ImageView
+				android:id="@+id/header_home"
+				style="@style/header_logo" 
+				android:contentDescription="@string/image_content_description"/>	
+			<TextView
+				android:text="Photo Search"
+				style="@style/text.header" 
+				android:contentDescription="@string/image_content_description"/>
+			<include layout="@layout/header_cart_button" />
+		</RelativeLayout>
+		<ImageView
+			android:id="@+id/photo_search_button"
+			android:src="@drawable/photo_search"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/image_content_description"
+			 />	
+	</RelativeLayout>
+	
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:divider="#cccccc"
+		android:dividerHeight = "1dip"
+		android:listSelector = "@drawable/listbg"
+		android:cacheColorHint="#00000000"
+		/>
+		
+		
+	<TextView android:id="@android:id/empty"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dip"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:padding="10dip"
+        android:text="@string/no_photo_text"/>
+		
+</LinearLayout
+>

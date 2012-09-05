@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="CommerceBox">
+		<attr name="checkmark" format="string"/>
+		<attr name="arrow" format="string"/>
+	</declare-styleable>
+		<declare-styleable name="ViewfinderView" />
+		<declare-styleable name="AnimatingRelativeLayout">
+		<attr name="animation_show" format="reference" /> 
+		<attr name="animation_hide" format="reference" /> 
+		<attr name="animation_cycletime" format="integer" /> 
+	</declare-styleable>
+	
+	    <!-- These are the attributes that we want to retrieve from the theme
+         in view/Gallery1.java -->
+    <declare-styleable name="Gallery1">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    
+        <declare-styleable name="com.rz.widget.HorizontalPager">
+        <attr name="pageWidth" format="dimension" />
+    </declare-styleable>
+ 
+</resources>

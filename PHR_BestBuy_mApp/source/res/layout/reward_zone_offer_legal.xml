@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="#f7f7f7">
+
+	<include layout="@layout/rz_header" />
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:orientation="vertical">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" style="@style/RZGreyText.Medium"
+				android:paddingLeft="20dip" android:paddingTop="10dip"
+				android:singleLine="true" android:text="@string/Legal_terms_title" />
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_margin="10dip"
+				android:id="@+id/rz_certificate_rl_whitebox_view_details_click"
+				android:layout_height="wrap_content" style="@style/commerce_box.white">
+				<TextView android:id="@+id/reward_zone_offer_legal_copy"
+					style="@style/RZBlackText.SmallMedium" android:padding="10dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="" />
+
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+
+
+</LinearLayout>
+
+

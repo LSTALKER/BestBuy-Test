@@ -1,0 +1,124 @@
+<resources>
+    <string-array name="categories">
+    	<item>Search All Items</item> 
+        <item>TV &amp; Video</item>
+        <item>Audio</item>
+        <item>Car</item>
+        <item>Cameras &amp; Camcorders</item>
+        <item>Computers</item>
+        <item>Software</item>
+        <item>Phones &amp; Office</item>
+        <item>Music</item>
+        <item>Movies</item>
+        <item>Games &amp; Toys</item>
+        <item>Home &amp; Appliances</item>
+    </string-array>
+    
+    <string-array name="offers">
+    	<item>Featured Offers</item>
+        <item>Home Theater</item>
+        <item>Musical Instruments</item>
+        <item>Cameras &amp; Camcorders</item>
+        <item>Computers</item>
+        <item>Cell Phones</item>
+        <item>Phones &amp; Office</item>
+        <item>iPod &amp; MP3 Players</item>
+        <item>Movies</item>
+        <item>Video Games &amp; Toys</item>
+        <item>Home &amp; Appliances</item>
+        <item>Car &amp; GPS</item>
+    </string-array>
+    
+    <string-array name="sortby">
+    	<item>Relevance</item>
+    	<item>Bestselling</item>
+    	<item>New Items</item>
+    	<item>Price - High to Low</item>
+    	<item>Price - Low to High</item>
+    	<item>Brand A-Z</item>
+    	<item>Brand Z-A</item>
+    </string-array>
+    
+    <string-array name="remix_sortby">
+    	<item>Ratings</item>
+    	<item>Price - High to Low</item>
+    	<item>Price - Low to High</item>
+    	<item>Name</item>
+    	<item>Release Date</item>
+    </string-array>
+    
+    <string-array name="reward_zone_sortby">
+    	<item>Date</item>
+    	<item>Name</item>
+    	<item>Price</item>
+    </string-array>
+    
+    <string-array name="reviews_sortby">
+    	<item>Newest</item>
+    	<item>Rating (Ascending)</item>
+    	<item>Rating (Descending)</item>
+    	<item>Helpful</item>
+    </string-array>
+    
+    <string-array name="commerce_cc_options">
+    	<item>Visa</item>
+    	<item>MasterCard</item>
+    	<item>American Express</item>
+    	<item>Discover</item>
+    	<item>Diners Club</item>
+    	<item>JCB</item>
+		<item>Best Buy credit card</item>
+		<item>Reward Zone MasterCard</item>
+	</string-array>
+	
+	<string-array name="commerce_cc_expiration_months">
+    	<item>01</item>
+    	<item>02</item>
+    	<item>03</item>
+    	<item>04</item>
+    	<item>05</item>
+    	<item>06</item>
+		<item>07</item>
+		<item>08</item>
+		<item>09</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+	</string-array>
+	
+	<string-array name="commerce_cc_expiration_years">
+    	<item>2011</item>
+    	<item>2012</item>
+    	<item>2013</item>
+    	<item>2014</item>
+    	<item>2015</item>
+		<item>2016</item>
+		<item>2017</item>
+		<item>2018</item>
+		<item>2019</item>
+		<item>2020</item>
+		<item>2021</item>
+	</string-array>
+	
+	<string-array name="cart_item_quantities">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+    	<item>10</item>
+	</string-array>
+	
+	<string-array name="restricted_credit_cards">
+    	<item>152300</item>
+    	<item>172720</item>
+    	<item>182000</item>
+    	<item>777700</item>
+    	<item>505338</item>
+	</string-array>
+	
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:textColor="#656565" >
+
+    <LinearLayout
+        android:id="@+id/gaming_search_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/default_style" >
+
+            <RelativeLayout style="@style/header" >
+
+                <ImageView
+                    android:id="@+id/header_home"
+                    style="@style/header_logo" 
+                    android:contentDescription="@string/image_content_description"/>
+
+                <TextView
+                    android:id="@+id/gameTradeInHeader"
+                    style="@style/text.header"
+                    android:text="@string/game_tradeIn_title" />
+
+                <include
+                    android:id="@+id/header_cart_button_layout"
+                    layout="@layout/header_cart_button" />
+
+                <Button
+                    android:id="@+id/gaming_search_btn_action"
+                    style="@style/button_blue_2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:text="@string/library_title"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/gaming_header_text"
+            android:padding="3dip"
+            android:text="@string/find_game_tradeIn_text" />
+
+        <LinearLayout
+            style="@style/default_style"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="3dip" >
+
+            <Button
+                android:id="@+id/gaming_search_search"
+                style="@style/button_search"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:text="@string/search_game_text" />
+
+            <ImageView
+                android:id="@+id/gaming_search_search_overlay_btn_open"
+                style="@style/default_style_wrap"
+                android:src="@drawable/icon_photo_search" 
+                android:contentDescription="@string/image_content_description"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gaming_disclaimer"
+            style="@style/commerce_text.gray"
+            android:paddingBottom="6dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/game_disclaimer_text"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/srchresult_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gaming_search_header"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/mdot_progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

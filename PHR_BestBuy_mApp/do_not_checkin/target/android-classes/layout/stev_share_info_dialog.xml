@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="250dip"
+	android:layout_height="wrap_content" android:paddingTop="20dip"
+	android:paddingLeft="20dip" android:paddingRight="20dip"
+	android:paddingBottom="16dip">
+
+	<Button android:id="@+id/store_locator_email"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="@string/email_title" android:textStyle="bold" android:textSize="13sp"
+		android:textColor="@color/default_text" />
+
+	<Button android:id="@+id/store_locator_sms"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="SMS" android:textStyle="bold" android:textSize="13sp"
+		android:textColor="@color/default_text" android:layout_marginTop="10dip" />
+
+	<Button android:id="@+id/store_locator_cancel"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="@string/cancel_text" android:textStyle="bold" android:textSize="13sp"
+		android:textColor="@color/default_text" android:layout_marginTop="20dip" />
+
+</LinearLayout>

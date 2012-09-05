@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.bestbuy.android.ui.CommerceBox
+        android:id="@+id/pushnotifications_rewardzone"
+        style="@style/commerce_box.inner.top"
+        CommerceBox:checkmark="gone" >
+
+        <TextView
+            style="@style/commerce_text.h3"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:id="@+id/category" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/pn_text_normal"
+            android:text="Off"
+            android:textColor="#385487" />
+    </com.bestbuy.android.ui.CommerceBox>
+
+</LinearLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="@string/upgrade_checker_title"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        style="@style/default_style"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ver_imageBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginTop="18dip"
+                    android:background="@drawable/verizon_logo"
+                    android:gravity="center" 
+                    android:contentDescription="@string/image_content_description"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_lay_comme_box_above"
+                android:layout_width="wrap_content"
+                android:layout_height="193dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    style="@style/commerce_box.white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="182dip"
+                    android:orientation="vertical"
+                    android:padding="2dip"
+                    android:weightSum="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/upgradefinder_v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45.5dip"
+                        android:layout_weight="0.33"
+                        android:background="@color/light_gray"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/upgradechecker_txt1"
+                            android:layout_width="140dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="21dip"
+                            android:paddingTop="10dp"
+                            android:text="@string/phone_number_title"
+                            android:textColor="#231f20"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/upgradechecker_separater"
+                            style="@style/vertical_line1"
+                            android:layout_toRightOf="@id/upgradechecker_txt1" />
+
+                        <RelativeLayout
+                            android:id="@+id/upgradefinder_v"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45.5dip"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/upgradechecker_separater"
+                            android:background="@color/white"
+                            android:gravity="center_vertical" >
+
+                            <EditText
+                                android:id="@+id/phone_number_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/upgradechecker_separater"
+                                android:background="@color/transparent"
+                                android:digits="0123456789-"
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:lines="1"
+                                android:maxLength="12"
+                                android:nextFocusDown="@id/phone_number_field"
+                                android:nextFocusLeft="@id/phone_number_field"
+                                android:nextFocusRight="@id/phone_number_field"
+                                android:nextFocusUp="@id/phone_number_field"
+                                android:paddingLeft="10dip"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/upgradechecker_separator"
+                        style="@style/horizontal_line"
+                        android:layout_width="wrap_content" />
+
+                    <RelativeLayout
+                        android:id="@+id/upgradechecker_ver_RR2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.5dip"
+                        android:background="@color/light_gray"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/upgradechecker_txt2"
+                            android:layout_width="140dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dip"
+                            android:paddingLeft="20dip"
+                            android:paddingTop="10dip"
+                            android:text="@string/billing_zip_title"
+                            android:textColor="#231f20"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/upgradechecker_separator"
+                            style="@style/vertical_line1"
+                            android:layout_toRightOf="@id/upgradechecker_txt2" />
+
+                        <RelativeLayout
+                            android:id="@+id/upgradechecker_ver_RR2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45.5dip"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/upgradechecker_separator"
+                            android:background="@color/white"
+                            android:focusableInTouchMode="true" >
+
+                            <EditText
+                                android:id="@+id/billing_zipcode_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/upgradechecker_separater"
+                                android:background="@color/transparent"
+                                android:digits="0123456789"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="5"
+                                android:nextFocusDown="@id/billing_zipcode_field"
+                                android:nextFocusLeft="@id/billing_zipcode_field"
+                                android:nextFocusRight="@id/billing_zipcode_field"
+                                android:nextFocusUp="@id/billing_zipcode_field"
+                                android:paddingLeft="10dip"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/upgradechecker_separator"
+                        style="@style/horizontal_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/upgradechecker_RR2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.5dip"
+                        android:background="@color/light_gray"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/text_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="0.22"
+                            android:paddingLeft="42dip"
+                            android:paddingTop="1dip"
+                            android:text="@string/asterisk_text"
+                            android:textColor="#00BFFF"
+                            android:textSize="19dip" />
+
+                        <TextView
+                            android:id="@+id/upgradechecker_txt3"
+                            android:layout_width="140dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/text_star"
+                            android:paddingBottom="10dip"
+                            android:paddingLeft="52dip"
+                            android:paddingTop="12dp"
+                            android:text="@string/last_ssn_text"
+                            android:textColor="#231f20"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/upgradechecker_separator"
+                            style="@style/vertical_line1"
+                            android:layout_toRightOf="@id/upgradechecker_txt3" />
+
+                        <RelativeLayout
+                            android:id="@+id/upgradechecker_RR2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45.5dip"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/upgradechecker_separator"
+                            android:background="@color/white" >
+
+                            <EditText
+                                android:id="@+id/last4_ssn_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@color/transparent"
+                                android:digits="0123456789"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="4"
+                                android:nextFocusDown="@id/last4_ssn_field"
+                                android:nextFocusLeft="@id/last4_ssn_field"
+                                android:nextFocusRight="@id/last4_ssn_field"
+                                android:nextFocusUp="@id/last4_ssn_field"
+                                android:paddingLeft="10dip"
+                                android:password="true"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/upgradechecker_separator"
+                        style="@style/horizontal_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/upgradechecker_RR2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.5dip"
+                        android:background="@color/light_gray"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/text_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="18dip"
+                            android:paddingRight="5dip"
+                            android:text="@string/asterisk_text"
+                            android:textColor="#00BFFF"
+                            android:textSize="19dip" />
+
+                        <TextView
+                            android:id="@+id/upgradechecker_txt4"
+                            android:layout_width="140dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/text_star"
+                            android:paddingBottom="10dip"
+                            android:paddingLeft="28dip"
+                            android:paddingTop="8dip"
+                            android:text="Pin/Password"
+                            android:textColor="#231f20"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/upgradechecker_separator"
+                            style="@style/vertical_line1"
+                            android:layout_toRightOf="@id/upgradechecker_txt4" />
+
+                        <RelativeLayout
+                            android:id="@+id/upgradechecker_RR2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45.5dip"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/upgradechecker_separator"
+                            android:background="@color/white" >
+
+                            <EditText
+                                android:id="@+id/pin_password_field"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@color/transparent"
+                                android:gravity="center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="textNoSuggestions"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:nextFocusDown="@id/pin_password_field"
+                                android:nextFocusLeft="@id/pin_password_field"
+                                android:nextFocusRight="@id/pin_password_field"
+                                android:nextFocusUp="@id/pin_password_field"
+                                android:paddingLeft="10dip"
+                                android:password="true"
+                                android:singleLine="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/text_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/asterisk_text"
+                    android:textColor="#31a4dd"
+                    android:textSize="19dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/text_start"
+                    android:text="This must be for the "
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/textView2"
+                    android:text="primary "
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/textView3"
+                    android:text="account holder"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" >
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip" >
+
+                <Button
+                    android:id="@+id/Continue_btn_blue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="7dip"
+                    android:background="@drawable/btn_blue_3"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/continue_text"
+                    android:textColor="@color/light_gray"
+                    android:textStyle="bold" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

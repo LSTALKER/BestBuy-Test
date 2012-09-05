@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/deals_list_row"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:textColor="#333"
+	android:padding="10dip"
+>
+		
+	<TextView
+			android:id="@+id/deals_list_name"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textColor="#333"
+			android:gravity="left"
+			android:layout_weight="1"
+		/>
+		
+		
+		<TextView
+			android:id="@+id/deals_list_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:background="@drawable/weekly_ad_badge_bg"
+			android:textColor="#fff"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			android:gravity="right"
+			android:layout_marginRight="5dip"
+		/>
+		
+	<ImageView
+			android:id="@+id/category_browse_right_carrot"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/carrot_r"
+			android:gravity="right"
+			android:contentDescription="@string/image_content_description"
+	/>
+		
+</LinearLayout>

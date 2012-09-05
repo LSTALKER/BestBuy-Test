@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="@string/upgrade_checker_title"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        style="@style/default_style"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="40dip"
+                android:paddingRight="40dip"
+                android:text="@string/are_you_eligible_text"
+                android:textColor="@color/black"
+                android:textSize="19dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="15dip"
+                android:text="@string/choose_carrier_text"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="sans" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_at_t"
+                    style="@style/commerce_box.white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/at_tBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/at_t_icon" 
+                        android:contentDescription="@string/image_content_description"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_verizon"
+                    style="@style/commerce_box.white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/verizonBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/verizon_icon"
+                        android:contentDescription="@string/image_content_description" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_sprint"
+                    style="@style/commerce_box.white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/sprintBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sprint_icon" 
+                        android:contentDescription="@string/image_content_description"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_tmobile"
+                   	style="@style/commerce_box.white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/tmobileBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/tmobile_icon" 
+                        android:contentDescription="@string/image_content_description"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

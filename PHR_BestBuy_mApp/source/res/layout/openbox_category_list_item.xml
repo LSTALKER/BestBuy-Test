@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="80dip"
+	android:paddingLeft="12dip" android:paddingRight="4dip"
+	android:orientation="horizontal" android:gravity="center_vertical"
+	android:background="@drawable/commerce_box_middle">
+
+	<LinearLayout android:layout_width="70dip" 
+		android:layout_height="50dip" android:gravity="center"
+		android:background="@color/transparent" android:layout_marginRight="10dip">
+		<ImageView android:layout_width="wrap_content" android:id="@+id/product_icon"
+			android:layout_height="wrap_content" 
+			android:contentDescription="@string/image_content_description"/>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginLeft="10dip" android:layout_height="wrap_content"
+		android:orientation="vertical" android:paddingTop="5dip"
+		android:paddingBottom="5dip">
+
+		<TextView android:id="@+id/category_title"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="#000000"  android:textStyle="bold"
+			android:layout_marginRight="3dip" android:text=""
+			android:maxLines="2" android:ellipsize="end"  android:layout_marginBottom="20dip"/>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:gravity="bottom" android:layout_height="wrap_content">
+			<TextView android:id="@+id/prize_label" android:textStyle="bold"
+				android:layout_width="100dip" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:textColor="#003b64"
+				android:layout_alignParentTop="true"  android:gravity="right" 
+				android:paddingRight="20dip"></TextView>
+			<ImageView android:layout_height="wrap_content" android:id="@+id/star_rating"
+				android:layout_width="wrap_content" android:layout_alignParentBottom="true" 
+				android:layout_marginRight="3dip"
+				android:paddingBottom="3dip"
+				android:contentDescription="@string/image_content_description" />
+			<TextView
+                            android:id="@+id/openbox_product_rating_bar_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/star_rating"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

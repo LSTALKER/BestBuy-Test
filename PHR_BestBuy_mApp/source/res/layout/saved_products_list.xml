@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/searchresult"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:textColor="#aaa">
+	
+	<RelativeLayout
+		style="@style/header">
+		<ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo"
+			android:contentDescription="@string/image_content_description" />
+		<TextView
+			android:text="Saved Items"
+			style="@style/text.header" />
+		<include layout="@layout/header_cart_button" />
+	</RelativeLayout>
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:divider="#cccccc"
+		android:dividerHeight = "1dip"
+		android:listSelector = "@drawable/listbg"
+		android:cacheColorHint="#00000000"
+		/>
+	
+	<TextView android:id="@android:id/empty"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dip"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:padding="10dip"
+        android:text="No saved products."/>
+		
+</LinearLayout>

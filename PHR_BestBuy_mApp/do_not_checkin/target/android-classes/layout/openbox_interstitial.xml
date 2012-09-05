@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFe8e8e9"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/default_style" >
+
+        <RelativeLayout style="@style/header" >
+
+            <ImageView
+                android:id="@+id/header_home"
+                style="@style/header_logo" 
+                android:contentDescription="@string/image_content_description"/>
+
+            <TextView
+                style="@style/text.header"
+                android:text="@string/openbox_text" />
+
+            <include layout="@layout/header_cart_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/openbox_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:text="@string/openbox_items"
+        android:textColor="@color/text_gray"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View style="@style/horizontal_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="7dip"
+        android:text="@string/openbox_header_text"
+        android:textColor="@color/text_gray"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/openbox_category_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_marginBottom="14dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/drop_down"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="7dip"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/openbox_button"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/left_grey_box"
+            android:text="@string/openbox_items"
+            android:textColor="@color/default_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clearance_button"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/right_grey_box"
+            android:text="@string/clearance_items"
+            android:textColor="@color/default_text"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <ListView
+        android:id="@+id/openbox_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dip"
+        android:fadeScrollbars="false" />
+
+    <TextView
+        android:id="@+id/result_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/dark_gray"
+        android:textSize="17dip"
+        android:textStyle="bold" />
+
+</LinearLayout>

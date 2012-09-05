@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <RelativeLayout
+		style="@style/header_blue_new">
+		 <ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo"
+			android:contentDescription="@string/image_content_description" />		
+		<TextView
+			android:text="@string/app_center_title"
+			style="@style/text.header.blue.new" />
+		<include layout="@layout/header_cart_button" />
+	</RelativeLayout>
+</LinearLayout>

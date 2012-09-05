@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:textColor="#656565">
+		<RelativeLayout
+			style="@style/header">
+			<ImageView
+				android:id="@+id/header_home"
+				style="@style/header_logo"
+				android:contentDescription="@string/image_content_description" />	
+			<TextView
+				android:text="@string/feedback_title"
+				style="@style/text.header" />
+			<include layout="@layout/header_cart_button" />
+		</RelativeLayout>
+			
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_scroll"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#fff">
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:paddingLeft="15dip"
+			android:paddingRight="15dip"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#656565">
+			<TextView
+				android:id="@+id/about_text_header"
+				style="@style/default_text_header"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/feedback_title" />
+			<TextView
+				android:id="@+id/about_text"
+				style="@style/default_text"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:text="@string/feedback_text" />
+			<ImageButton android:id="@+id/feedback_launch_email"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/feedback_button"
+				android:contentDescription="@string/image_content_description" />
+			<ImageButton android:id="@+id/feedback_call_best_buy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dip"
+				android:background="@drawable/callthehelpline"
+				android:contentDescription="@string/image_content_description" />
+		</LinearLayout>
+</ScrollView>
+
+	</LinearLayout>

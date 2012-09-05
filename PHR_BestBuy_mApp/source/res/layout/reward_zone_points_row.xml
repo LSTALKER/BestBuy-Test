@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/reward_zone_points_row" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" style="@style/commerce_box.inner"
+	android:orientation="horizontal" android:padding="10dip">
+	<LinearLayout android:layout_width="wrap_content"
+		android:paddingLeft="10dip" android:layout_height="wrap_content">
+		<TextView android:id="@+id/reward_zone_points_cert_amount"
+			style="@style/RZBlueText.Big" android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content"
+		android:paddingLeft="15dip" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_gravity="center_vertical">
+		<TextView android:id="@+id/reward_zone_points_cert_number"
+			android:textColor="#FF000000" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:textSize="12sp" android:padding="2dip" />
+		<TextView android:id="@+id/reward_zone_points_cert_details"
+			android:padding="2dip" android:textSize="12sp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textStyle="bold"/>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:id="@+id/rz_points_header_right_arrow"
+			android:src="@drawable/carrot_r" android:paddingRight="5dip"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true" 
+			android:contentDescription="@string/image_content_description"/>
+
+	</RelativeLayout>
+</LinearLayout>

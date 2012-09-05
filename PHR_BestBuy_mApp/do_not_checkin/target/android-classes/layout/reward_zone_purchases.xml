@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/reward_zone_purchases_main" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffffff" android:paddingTop="1dip">
+
+	<include layout="@layout/search_layout" />
+
+	<View android:layout_width="fill_parent" android:layout_height="1dip"
+		android:background="#cccccc" android:layout_marginTop="1dip" />
+	<ListView android:id="@+id/reward_zone_purchases_list"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:divider="#cccccc" android:dividerHeight="1dip"
+		android:cacheColorHint="@android:color/transparent"
+		android:listSelector="@drawable/listbg" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/reward_zone_points_main" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#e8e8e8">
+	
+   
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		 <include layout="@layout/rz_points_list_header"/>
+		<ListView android:id="@+id/reward_zone_certificate_list"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:divider="#cccccc" android:dividerHeight="1dip"
+			android:cacheColorHint="@android:color/transparent"
+			android:listSelector="@drawable/listbg" 
+			android:background="@color/white"
+			
+			/>
+
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="70dip" android:padding="10dip"
+	android:background="@drawable/commerce_box_middle">
+
+	<LinearLayout android:layout_width="0dip"
+		android:layout_height="70dip" android:layout_weight=".9"
+		android:orientation="vertical" android:layout_marginLeft="5dip"
+		android:gravity="center_vertical">
+
+		<TextView android:id="@+id/store_event_title"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textStyle="bold" android:textColor="@color/item_dark_black"
+			android:textSize="15sp" android:paddingLeft="8dip" />
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="0dip"
+		android:layout_height="70dip" android:layout_weight=".1"
+		android:gravity="center_vertical|right">
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/carrot_r"
+			android:contentDescription="@string/image_content_description" />
+
+	</LinearLayout>
+
+</LinearLayout>

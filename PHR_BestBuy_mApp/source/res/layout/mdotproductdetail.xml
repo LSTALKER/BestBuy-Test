@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/searchbar_header"
+        layout="@layout/mdot_webview_header" />
+
+    <RelativeLayout
+        android:id="@+id/title_header"
+        style="@style/header"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/header_home"
+            style="@style/header_logo" 
+            android:contentDescription="@string/image_content_description"/>
+
+        <TextView
+            style="@style/text.header"
+            android:text="Order Status" />
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/searchresult_browseby_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/search_result_header_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="@string/browse_product_cat_text"
+                android:textColor="#5a5a5a"
+                android:textStyle="bold" />
+
+            <View style="@style/horizontal_line" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/srchresult_header"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/mdot_progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </ProgressBar>
+
+        <FrameLayout
+            android:id="@+id/webview_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center_horizontal" android:orientation="vertical"
+	android:background="#f7f7f7">
+	<include layout="@layout/rz_header" />
+	<ScrollView android:layout_width="fill_parent"
+		android:scrollbars="none" android:layout_height="fill_parent"
+		android:fadingEdge="vertical" android:layout_gravity="center_horizontal"
+		android:background="#f7f7f7">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_gravity="center_horizontal"
+			android:orientation="vertical" android:paddingLeft = "15dip" android:paddingRight = "15dip">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="8dip">
+				<ImageView android:id="@+id/reward_zone_offer_image"
+					android:layout_width="130dip"
+					android:layout_height="110dip" android:padding="5dip"
+					android:background="@drawable/list_thumb_big"
+					android:layout_marginRight="10dip" android:layout_gravity="center"
+					android:layout_marginTop="5dip" android:layout_marginLeft="5dip"
+					android:contentDescription="@string/image_content_description" />
+				<ImageView android:id="@+id/rz_offer_redeem_checkmark"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/tick_mark" android:visibility="invisible"
+					android:contentDescription="@string/image_content_description"/>
+				<TextView android:id="@+id/reward_zone_offer_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/reward_zone_offer_image"
+					android:text="@string/offer_title" android:textStyle="bold"
+					android:textColor="#231f20" android:textSize="14sp"
+					android:layout_marginTop="5dip" />
+				<TextView android:id="@+id/reward_zone_offer_expiration"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_below="@id/reward_zone_offer_title"
+					android:layout_toRightOf="@id/reward_zone_offer_image"
+					android:layout_marginTop="5dip" android:textStyle="bold"
+					android:textColor="#ae1231" android:textSize="13sp" />
+			</RelativeLayout>
+
+
+			<LinearLayout android:gravity="center"
+				android:layout_marginTop="15dip" android:orientation="horizontal"
+				android:id="@+id/rz_offer_want_layout" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_marginBottom="15dip">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginRight="40dip"
+					android:orientation="vertical" android:gravity="center">
+					<Button android:id="@+id/rz_i_want_it_button"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:background="@drawable/icon_thumbs_up"></Button>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#737474"
+						android:textStyle="bold" android:textSize="15sp" android:text="Claim this offer" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:gravity="center">
+					<Button android:id="@+id/rz_no_thanks_button"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:background="@drawable/icon_thumbs_down"></Button>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#737474"
+						android:textStyle="bold" android:textSize="15sp" android:text="Maybe later" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<TextView android:layout_gravity="center" android:gravity="center"
+				android:visibility="gone" android:id="@+id/rz_redeem_Text"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:textColor="#019a0a" android:textStyle="bold"
+				android:textSize="15sp" android:layout_marginTop="15dip"
+				android:layout_marginBottom="15dip" android:text="You have claimed this offer"></TextView>
+
+			<TextView style="@style/RZGreyText.Medium"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="3dip" android:layout_marginLeft="10dip" android:layout_marginBottom = "5dip"
+				android:textColor="#737474" android:textSize="16sp" android:text="@string/offer_details_title" 
+				android:textStyle="bold" android:id="@+id/rz_offer_rl_whitebox_label" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingLeft="10dip"
+				android:paddingRight="10dip" android:paddingBottom="13dip"
+				android:paddingTop="13dip" style="@style/commerce_box.white">
+				<WebView android:id="@+id/reward_zone_offer_long_copy"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"></WebView>
+			</LinearLayout>
+			<TextView android:id="@+id/legalterm_instructions"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:textSize="16sp" android:paddingLeft="12dip"  android:layout_marginBottom ="15dip"
+				android:paddingTop="7dip" android:paddingBottom="7dip"
+				android:paddingRight="12dip" android:layout_marginTop="10dip"
+				android:drawableRight="@drawable/carrot_r" android:textColor="#231f20"
+				android:textStyle="bold" android:text="Terms &amp; Conditions"
+				style="@style/commerce_box.yellow"></TextView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

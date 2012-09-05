@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/draggable_icon_layout"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="-100dip"
+	android:layout_marginLeft="-100dip"
+	android:orientation="vertical">
+		<RelativeLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="center">
+			<ImageView
+				android:id="@+id/draggable_icon_image"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dip"
+				android:src="@drawable/icon_openbox" 
+				android:contentDescription="@string/image_content_description"/>
+			<ImageView
+				android:id="@+id/draggable_icon_delete"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="-3dip"
+				android:layout_marginLeft="-3dip"
+				android:src="@drawable/btn_close"
+				android:visibility="gone" 
+				android:contentDescription="@string/image_content_description"/>
+		</RelativeLayout>
+		<TextView
+			android:id="@+id/draggable_icon_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dip"
+			android:text="@string/openbox_text"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:textColor="#49494a"
+			android:layout_gravity="center"
+			android:maxLines="2"
+			android:ellipsize="end" />
+</LinearLayout>
+		

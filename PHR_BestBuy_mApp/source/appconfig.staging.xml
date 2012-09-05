@@ -1,0 +1,15 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="bby_list_host">http://bbylist-int.appspot.com</string>
+	<string name="bby_list_api_key">android-of-elvinkind</string>
+	<string name="bby_serv_url">http://bbyserv-int.appspot.com</string>
+	<string name="bby_serv_api_key">recursiveawesome</string>
+	<string name="SMAL_service_url">http://bb301-staging.heroku.com</string>
+	<string name="SMAL_service_secure_url">https://bb301-staging.heroku.com</string>
+	<string name="SMAL_api_key">d972f92f4e193575a0cdb916261ec12f6ca7b4045ae2efe29c6c4b07c32d41e79f6d312bfbb38de8</string>
+	<string name="SMAL_secure_api_key">80188d6dc71ba5b3de6d76cc94d706981b83ce3bebea3f4379bf3420df133088dc75764fbcf94f3b</string>
+	<string name="bby_scan_url">https://bby-mc-staging.appspot.com/code</string>	
+	<string name="bby_scan_api_key">Ewn6iQbVyAFGvJpOaNDXULd3</string>
+	<string name="bby_offer_url">https://bbyoffer-int.appspot.com</string>
+	<string name="bby_offer_api_key">testkey</string>
+</resources> 

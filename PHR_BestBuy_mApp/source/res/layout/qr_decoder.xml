@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root node that specifies the type of layout: Frame -->
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center"
+	>
+	<!-- The surface view that will contain the camera preview image -->
+	<!-- The ID for this view will be passed to the decoder activity -->
+	<SurfaceView
+		android:id="@+id/sv_decode"
+		android:layout_width="640dip"
+		android:layout_height="480dip"
+		android:layout_gravity="center"
+	/>
+	<!-- Custom view that will overlay the view finder reticle on top of the camera preview -->
+	<com.mobiledatasys.decoder.ViewFinderView
+		android:id="@+id/vfv_decode"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:background="#00000000"
+	/>
+	<!-- The following is an example of how to include additional UI elements -->
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#00000000"
+		>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/scanner_instructions"
+				android:scaleType="centerCrop" 
+				android:contentDescription="@string/image_content_description"/>
+		</LinearLayout>
+	</RelativeLayout>
+</FrameLayout>

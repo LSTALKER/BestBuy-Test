@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="@string/upgrade_checker_title"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/headerImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="13dip"
+        android:paddingTop="13dip" >
+
+        <ImageView
+            android:id="@+id/carrier_Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip" 
+            android:contentDescription="@string/image_content_description"/>
+
+        <ImageButton
+            android:id="@+id/upgrade_chkr_at_t_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/carrier_Logo"
+            android:background="@drawable/at_t_text" 
+            android:contentDescription="@string/image_content_description"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_upgradation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dip"
+        android:layout_marginRight="24dip" >
+
+        <TextView
+            android:id="@+id/upgrade_eligible_phone_nbr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/upgrade_eligible_ph_nbr"
+            android:textColor="@color/default_text"
+            android:textSize="19dip" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/phoneNumberList"
+        style="@style/commerce_box.white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="20dip"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dip"
+        android:listSelector="@color/transparent" />
+
+</LinearLayout>

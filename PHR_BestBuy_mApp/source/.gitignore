@@ -1,0 +1,10 @@
+# Android noise
+bin/*
+gen/*
+ 
+# old skool
+.svn
+ 
+# osx noise
+.DS_Store
+*.db

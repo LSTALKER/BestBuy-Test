@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/preferred_category_text"
+        style="@style/commerce_text.h3"
+        android:layout_weight="1"
+        android:padding="10dip"
+        android:text="Category" />
+
+    <ImageView
+        android:id="@+id/preferred_category_checkmark"
+        style="@style/default_style_wrap"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/icon_checkmark" 
+        android:contentDescription="@string/image_content_description"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#f7f7f7">
+	<include
+		layout="@layout/rz_header" />
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#f7f7f7">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:padding="10dip">
+			<!--  <TextView
+				android:paddingLeft="10dip"
+				style="@style/RZGreyText.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:text="@string/rz_sliver_status_text" />-->
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				style="@style/commerce_box.white">
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="fill_parent"
+        android:padding="10dip"
+        android:layout_height="wrap_content" />
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

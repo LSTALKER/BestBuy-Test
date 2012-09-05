@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.photon"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/header_pn" >
+
+       <ImageView
+            android:id="@+id/header_home"
+            style="@style/header_logo" 
+            android:contentDescription="@string/image_content_description"/>
+        <TextView
+            style="@style/text.header"
+            android:text="@string/noti_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pushnotification_category_status"
+        style="@style/commerce_box.white"
+        android:layout_margin="15dip"
+        android:orientation="vertical" >
+
+        <!-- pushnotification_category and status inserted here -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/header" >
+
+        <ImageView
+            android:id="@+id/header_home"
+            style="@style/header_logo" 
+            android:contentDescription="@string/image_content_description"/>
+
+        <TextView
+            style="@style/text.header"
+            android:text="@string/noti_title" />
+
+        <Button
+            android:id="@+id/done_btn"
+            style="@style/button_blue_2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dip"
+            android:text="@string/done_text" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/commerce_scrollView"
+        android:fillViewport="true" >
+
+        <LinearLayout style="@style/commerce_main" >
+
+            <RelativeLayout
+                style="@style/commerce_box.white.plain"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    style="@style/commerce_text.h3"
+                    android:layout_width="140dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="Reward Zone" />
+
+                <ToggleButton
+                    android:id="@+id/pushnotification_togglebutton_rewardzone"
+                    android:layout_width="60dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dip"
+                    android:layout_marginTop="1dip"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:textSize="11dip" />
+            </RelativeLayout>
+
+<!--             <TextView -->
+<!--                 android:id="@+id/reward_zone_signout" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_horizontal" -->
+<!--                 android:paddingTop="10dip" -->
+<!--                 android:text="" -->
+<!--                 android:textColor="#004472" -->
+<!--                 android:textSize="14sp" -->
+<!--                 android:textStyle="bold" -->
+<!--                 android:visibility="gone" > -->
+<!--             </TextView> -->
+
+            <TextView
+                android:id="@+id/pushnotification_rewardzone_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="@string/PN_RZ_TEXT"
+                android:textColor="#4c566c"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/push_notification_rewardzone_login"
+                style="@style/commerce_box.white.padded"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <TextView
+                    style="@style/commerce_text.h3"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:text="@string/rz_login_text" />
+
+                <ImageView
+                    style="@style/default_style_wrap"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/carrot_r"
+                    android:contentDescription="@string/image_content_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

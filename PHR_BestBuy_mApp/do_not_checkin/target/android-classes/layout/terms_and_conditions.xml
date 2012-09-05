@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<!-- <RelativeLayout style="@style/header">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="10dip"
+			android:paddingBottom="11dip" android:textStyle="bold"
+			android:textSize="18sp" android:textColor="@color/white"
+			android:gravity="center" android:text="Terms &amp; Conditions" />
+	</RelativeLayout>-->
+	<include
+		layout="@layout/rz_header" />
+	<WebView android:id="@+id/rz_terms_cond_text"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:textColor="#737474">
+	</WebView>
+</LinearLayout>
+
+

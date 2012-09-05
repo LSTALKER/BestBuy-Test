@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/deal_category"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:textColor="#aaa">
+	
+	<include layout="@layout/header2" />
+		
+	<TextView android:id="@+id/deal_category_header"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:padding="10dip"
+        android:background="#525152"
+        android:visibility="gone" />
+	
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:divider="#cccccc"
+		android:dividerHeight = "1dip"
+		android:listSelector = "@drawable/listbg"
+		android:cacheColorHint="#00000000"
+		/>
+	
+	<TextView android:id="@android:id/empty"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dip"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:padding="10dip"
+        android:text="@string/no_deals_text"/>
+		
+</LinearLayout>

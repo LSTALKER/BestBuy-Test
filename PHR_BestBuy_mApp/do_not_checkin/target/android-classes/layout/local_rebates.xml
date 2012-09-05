@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.android"
+    style="@style/commerce_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="@string/local_rebate_text"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold" />
+
+    <!-- Start: Product details -->
+
+    <LinearLayout
+        android:id="@+id/rebateProductDetailsLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="11dip"
+        android:paddingLeft="24dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:id="@+id/rebateProductNameTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#231f20"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rebateProductPriceTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dip"
+            android:text=""
+            android:textColor="#737474"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/rebateProductModelTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dip"
+            android:text=""
+            android:textColor="#737474"
+            android:textSize="14sp" />
+        <!-- Start: Email -->
+
+        <LinearLayout
+            android:id="@+id/localrebateEmailLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/rebateProductEmailTv1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Rebates: "
+                android:textColor="#737474"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rebateProductEmailTv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email claim"
+                android:textColor="#003b64"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rebateProductEmailTv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" forms for future access."
+                android:textColor="#737474"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- End: Email -->
+    </LinearLayout>
+    <!-- End: Product details -->
+
+    <ImageView style="@style/drop_shadow" android:contentDescription="@string/image_content_description"/>
+
+    <!-- Start: zip -->
+
+    <LinearLayout
+        android:id="@+id/rebateZipLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rebateZipTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dip"
+            android:text="@string/find_rebate_text"
+            android:textColor="#231f20"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rebateZipSubLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/rebateZipEt"
+                style="@style/commerce_editText"
+                android:layout_marginRight="6dip"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_search"
+                android:drawablePadding="6dip"
+                android:hint="Enter Zip code"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/rebateGoBtn"
+                style="@style/button_blue_2"
+                android:layout_width="67dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="4dip"
+                android:text="Go"
+                android:textSize="19sp" />
+
+            <ImageButton
+                android:id="@+id/rebateCamBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/cam"
+                android:visibility="gone" 
+                android:contentDescription="@string/image_content_description"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- End: zip -->
+
+
+    <!-- Start: Local rebate list -->
+
+    <TextView
+        android:id="@+id/rebateSearchResultTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dip"
+        android:text="0 Rebates found near &quot;00000&quot;"
+        android:textColor="#231f20"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="7dip"
+        android:layout_weight="1"
+        android:background="@drawable/local_rebates_whitebox"
+        android:cacheColorHint="#00000000"
+        android:divider="#FFcccccc"
+        android:dividerHeight="1dip"
+        android:focusable="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/rebateNotAvailableMsgTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dip"
+        android:paddingRight="5dip"
+        android:paddingTop="19dip"
+        android:text="@string/eco_rebates_no_rebates_msg"
+        android:textColor="#737474"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rebateFooterLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="24dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/rebateFooterTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rebate_info_text"
+            android:textColor="#737474"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:text="Terms"
+            android:textColor="#003b64"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

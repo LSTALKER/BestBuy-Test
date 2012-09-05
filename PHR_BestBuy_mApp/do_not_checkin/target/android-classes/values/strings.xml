@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Best Buy</string>
+    <string name="sort_by_prompt">Sort By</string>
+    <string name="msg_getting_prod_info">Getting Product Information</string>
+    <string name="rz_link">To convert your points into certificates, go to MyRZ.com.</string>
+    <string name="search_hint">Search Best Buy</string>
+    <string name="app_label">Best Buy</string>
+    <string name="button_ok">OK</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_status_game_tradein">Center and hold the barcode to scan</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="msg_to_cashier">Please show this screen to the cashier when checking out.</string>
+    <string name="rebate_finder_information">Our EcoRebates will automatically show you all the rebates that are available on your \nnew appliance. Just provide your product information and the ZIP code below.</string>
+    <string name="rz_validation">Points take approximately 30-35 days to post to your account.</string>
+
+    <!-- Titles and Texts -->
+    <string name="noti_initial_count">0</string>
+    <string name="alert_learn_more">Learn More</string>
+    <string name="offer_details">Offer Details</string>
+    <string name="app_center_title">App Center</string>
+    <string name="barcode_scan_text">Center and hold the barcode or QR Code to scan</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="remove_item_text">Remove Item</string>
+    <string name="done_text">Done</string>
+    <string name="continue_text">Continue</string>
+    <string name="try_again_text">Try Again</string>
+    <string name="no_deals_text">No deals in this category found.</string>
+    <string name="no_offers_text">No offers in this category found.</string>
+    <string name="no_product_with_offer_text">No products associated with this offer found.</string>
+    <string name="loading_deals_text">Loading Deals</string>
+    <string name="loading_text">Loading...</string>
+    <string name="no_deals_found_text">No deals found.</string>
+    <string name="test_envi_text">Testing Environment</string>
+    <string name="proxy_settings_text">Proxy Settings</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_text">We are constantly improving and developing this application for one purpose: To serve you better. And, the best way for us to serve you, is to hear from you. Send us your ideas for features you would like to see (or fixes that need our attention) in future releases by clicking the button below.\n\nThank you for your feedback.\n\nBest Buy Mobile Apps Team.\n</string>
+    <string name="library_title">Library</string>
+    <string name="no_results_found_text">No results found.</string>
+    <string name="some_promo_goes_text">Some Promotion goes here</string>
+    <string name="noti_title">Notifications</string>
+    <string name="loading_today_deal">Loading today\'s deals...</string>
+    <string name="no_new_noti_text">You have no new notifications.</string>
+    <string name="update_noti_text">Updating notifications...</string>
+    <string name="manage_noti_text">Manage Notifications</string>
+    <string name="image_content_description">BestBuy Image</string>
+    <string name="average_rate_title">Average Rating</string>
+    <string name="billing_zip_title">Billing Zip Code</string>
+    <string name="asterisk_text">*</string>
+    <string name="browse_product_cat_text">Browsing Product Categories</string>
+    <string name="narrow_text">Narrow</string>
+    <string name="my_cart_text">My Cart</string>
+    <string name="my_account_text">My Account</string>
+    <string name="model_text">Model: </string>
+    <string name="message_text">Message</string>
+    <string name="member_text">Member:</string>
+    <string name="member_rz_card_text">Member Reward Zone Card</string>
+    <string name="loading_rz_purchases_text">Loading Reward Zone Purchases</string>
+    <string name="loading_products_text">loading products</string>
+    <string name="loading_offers_text">loading offers</string>
+    <string name="loading_more_text">Loading more results...</string>
+    <string name="loading_more_products_text">Loading more products...</string>
+    <string name="Legal_terms_title">Legal Terms</string>
+    <string name="items_ship_title">Items may ship separately.</string>
+    <string name="items_label_title">Item Label</string>
+    <string name="offer_title">Offer Title</string>
+    <string name="offer_details_title">Offer Details</string>
+    <string name="no_photo_text">No Photo Search Results.</string>
+    <string name="no_match_product_text">No matching products found.</string>
+    <string name="no_noti_text">No notifications.</string>
+    <string name="facebook_title">Facebook</string>
+    <string name="email_title">Email</string>
+    <string name="ecorebates_title">EcoRebates</string>
+    <string name="compare_title">Compare</string>
+    <string name="preferred_cat_title">Preferred Categories</string>
+    <string name="price_title">Price:</string>
+    <string name="price_checkout_title">See price at checkout</string>
+    <string name="no_notifications">You have no new notifications.</string>
+    <string name="notifications">Notifications</string>
+
+    <!-- GAME TRADEIN -->
+    <string name="find_game_tradeIn_text">Find your game\'s trade-in value</string>
+    <string name="search_game_text">Search for a game</string>
+    <string name="game_disclaimer_text">Trade-Ins: Get Best Buy giftcards instantly when you trade your games in-store.</string>
+    <string name="search_bestbuy_title">Search Best Buy</string>
+    <string name="game_tradeIn_title">Game Trade-In</string>
+    <string name="trade_in_title">Trade-In Value</string>
+
+    <!-- STORE EVENTS -->
+    <string name="store_events">Store Events</string>
+    <string name="UNABLE_TO_ACCESS_LOCATION">Not able to find current location</string>
+    <string name="NO_ROAD_ROUTE_AVAILABLE">No Route Found</string>
+    <string name="ENABLE_GPS_SETTINGS">Please enable your device location services.</string>
+    <string name="APP_NOT_FOUND">Application is not found</string>
+    <string name="VALID_SEARCH">You must first enter a city name or zip code in order to run a search.</string>
+    <string name="VALID_ZIPCODE">Please enter valid five digit zip code.</string>
+    <string name="ISUSE_CURRENT_LOCATION">\"Best Buy\" Would Like To Use Your Current Location</string>
+    <string name="DONT_ALLOW">Don\'t Allow</string>
+    <string name="ALLOW">OK</string>
+    <string name="nearby_stores_text">Nearby Stores</string>
+
+    <!-- OPENBOX -->
+    <string name="openbox_items">Open Box Items</string>
+    <string name="clearance_items">Clearance Items</string>
+    <string name="openbox_header_text">Select the open box category that you are interested in. Please note that some categories may not contain products.</string>
+    <string name="openbox_text">Open Box</string>
+    <string name="reviews_text">Reviews </string>
+
+    <!-- GIFTCARD -->
+
+    <string name="giftcard_scan_text">Center and hold the Gift Card code to scan</string>
+    <string name="type_number_text">Type Number Instead</string>
+    <string name="check_gift_balance_text">Check Gift Card Balance</string>
+    <string name="type_giftcard_text">Type In Gift Card Details</string>
+
+    <!-- Start: Eco rebates -->
+    <string name="eco_rebates_no_rebates_msg">We\'re sorry, but there are no rebates available for </string>
+    <string name="rebate_upto_text">1 rebate up to $25</string>
+    <string name="local_rebate_text">Local Rebates</string>
+    <string name="find_rebate_text">Find rebates in your area</string>
+    <string name="rebate_info_text">Rebate info provided by EcoRebates.</string>
+    <string name="select_brand_text">Select a brand</string>
+
+    <!-- REWARD ZONE -->
+
+    <string name="rz_login_text">Reward Zone Login</string>
+    <string name="rz_sliver_status_text">Premium Silver Status Benefits</string>
+    <string name="see_rz_sliver_status_text">See Premier Silver Status Benefits</string>
+    
+
+    <!-- Upgrade Checker -->
+
+    <string name="remind_me_eligible_text">Remind Me When I\'m Eligible</string>
+    <string name="call_me_text">Call Me</string>
+    <string name="phone_number_title">Phone Number</string>
+    <string name="phone_title">Phone:</string>
+    <string name="last_ssn_text">Last 4 SSN</string>
+    <string name="are_you_eligible_text">Are you eligible for a phone upgrade?</string>
+    <string name="find_store_text">Find a Store</string>
+    <string name="find_stores_text">Find Stores</string>
+    <string name="change_text_me_title">Change to Text Me</string>
+    <string name="change_call_me_title">Change to Call Me</string>
+    <string name="contract_enddate_title">Contract End Date: </string>
+    <string name="choose_carrier_text">Choose your carrier to find out:</string>
+    <string name="full_eligibility_text">Full Eligibility Date:</string>
+    <string name="upgrade_checker_title">Phone Upgrade</string>
+    <string name="upgrade_eligible_ph_nbr"><b>Which phone number would you like to check for upgrade eligibility?</b></string>
+    <string name="terms_and_condition">Terms &amp; Conditions</string>
+    <string name="warning">Warning: Your contract has not expired yet, therefore you may be subject to an early termination fee if you switch carriers.</string>
+    <string name="good_news">Good news! You\'re eligible for an early upgrade if you purchase an Android Phone.</string>
+    <string name="good_news_unsucess">Good News! You\'re eligible for an upgrade in 129 days!</string>
+    <string name="gift_card"> Card.<sup>
+            <small>2</small>
+        </sup></string>
+    <string name="good_news_meaning">This means you can upgrade to the very     latest Android Phone right now, just for renewing your contract. If you\'d prefer a different phone, you can wait until you qualify for a full upgrade.</string>
+    <!-- <string name="eligibility_date">Eligibility dates are based upon the carrier\'s records. Message and Data rates may apply. See full terms and conditions. For info, text HELP to 22891.</string> -->
+    <string name="eligibility_date">Eligibility dates are based upon the carrier\'s records. Message and Data rates may apply. See full terms and conditions. For info, text HELP to 22891.</string>
+    <string name="contact_you">Let us contact you when you\'re eligible for a full upgrade. How should we   remind you?</string>
+    <string name="early_upgrade"><sup>
+            <small>1</small>
+        </sup>Early upgrade eligibility entitles you to upgrade to an Android when you extend your current contract for an additional 2 year with your current carrier. A full upgrade entitles you to the best pricing on any new handset with your existing carrier when you extend your current contract.</string>
+    <string name="some_restriction"><sup>
+            <small>2</small>
+        </sup>Some restriction apply. Not available in all stores. Not available in Puerto Rico. Condition, documentation and accessories may affect value. Value subject to our physical inspection and evaluation. You are responsible for removing any data from your device before providing the product for evaluation. For complete details, go to Bestbuytradein.com, See a customer Service Specialist or visit the Geek Squad® Precinct within your local store.   We reserve the right to refuse any trade-in for any reason.</string>
+    
+    <!-- <string name="certificate_terms">Redeemable toward the purchase of any eligible product or service with a total purchase in excess of the amount of the certificate excluding tax and shipping and handling. Certificate is ineligible for certain products and services, tax and Best Buy Gift Cards.
+\n\nCashier instructions: Scan the Reward Zone program membership card. Scan all items and press TOTAL. Press F8 (Reward zone certificate). Key 30 digit certificate number without spaces. POS verifies the certificate and reduces the amount of the eligible item purchases.
+\n\nTo redeem Reward Certificates online at BestBuy.com, enter the certificate number at checkout, where indicated.
+\n\nTo redeem Reward Certificates over the phone, simply give the Customer Service Representative your certificate number.
+\n\nGood at any participating Best Buy retail store or online at BestBuy.com. Excludes Puerto Rico Best Buy stores. No photocopies or facsimiles accepted. Not redeemable for cash, no change will be given back on redemption. Valid on in-stock items only. No rainchecks. Not valid on prior purchases or as payment on your Best Buy credit card. Certificate valid through expiration date. Certificate value is 1/100th of 1 cent. Must present membership card when redeeming this certificate to earn additional points. No cash refunds. Certificates will not be replaced if lost, stolen or expired.</string> -->
+   
+    <string name="certificate_terms">Redeemable toward the purchase of any eligible product or service with a total purchase in excess of the amount of the certificate excluding tax, shipping and handling.
+\n\nThe following items are considered non-qualifying redemptions for which reward certificates may not be redeemed:
+purchases at any Pacific Sales store-within-a-store, purchases/rentals at rent-to-own locations inside Best Buy stores, prior purchases, purchase of Best Buy or Magnolia Gift Cards, purchases made for
+resale, payment on any Best Buy Credit Card or Reward Zone program Credit Card, Miele appliances in AZ, CA, or NV, sales tax, jurisdictional fees, shipping charges, service charges, recycling fees and
+discounted Best Buy for Business or commercial purchases. Other exclusions may apply.
+\n\nTo redeem reward certificates online at BestBuy.com, enter the certificate number at checkout, where indicated.
+\n\nTo redeem reward certificates over the phone, simply give the Customer Service Representative your certificate number.
+\n\nGood at any participating Best Buy retail store or BestBuy.com. Not redeemable for cash, no change will be given back on redemption. Certificate valid until midnight (Central Time) on
+expiration date shown. No cash value. No cash refunds. Certificates will not be replaced if expired.</string>
+
+
+    <!-- Market Place Item -->
+    <string name="MARKET_PLACE_ITEM_SUBTITLE">Marketplace Item:</string>
+
+    <!-- FONTS -->
+    <string name="FONT_DROIDSANS_BOLD">fonts/DroidSans_Bold.ttf</string>
+    <string name="FONT_DROIDSANS">fonts/DroidSans.ttf</string>
+    <string name="FONT_HELVETICA_BOLD">fonts/helveticabold.otf</string>
+    <string name="FONT_HELVETICA_65W">fonts/helr65w.ttf</string>
+    <string name="droidsansbold">DroidSansBold</string>
+    <string name="droidsans">DroidSans</string>
+    <string name="helveticabold">HelveticaBold</string>
+    <string name="helvetica65w">Helvetica65w</string>
+    <string name="INDEX_PAGE">index.jsp</string>
+    <string name="ADDTOCART_PAGE">cart.jsp</string>
+    <string name="THANKYOU_PAGE">thankyou.jsp</string>
+    <string name="PDP_PAGE">details.jsp</string>
+    <string name="DETAIL_PAGE">detail.jsp</string>
+    <string name="ACCESSORIES_ADD_TO_CART_PAGE">accessoriesintermediatepage.jsp</string>
+    <string name="VIEWWISHLIST_PAGE">viewwishlistinfo.jsp</string>
+    <string name="CREATEWISHLIST_PAGE">createoreditwishlist.jsp</string>
+    <string name="CHECKOUT_PAGE">checkout/checkouttriage.jsp</string>
+    <string name="CHECKOUT_SIGNIN">checkouttriagecenterwell.jsp</string>
+    <string name="CONTINUE_BTN_REVIEW_PAGE">review.jsp</string>
+    <string name="SIGNIN_BTN_SCHDELIVERY_PAGE">scheduledelivery.jsp</string>
+    <string name="SIGNIN_BTN_SHIPPICUP_PAGE">shippickup.jsp</string>
+    <string name="SIGNIN_BTN_SIGNIN_PAGE">signincenterwell.jsp</string>
+    <string name="CREATE_BILLING_ADDRESS_PAGE">createbillingaddress.jsp</string>
+    <string name="WISHLIST_URL">wishlist/searchwishlist.jsp</string>
+    <string name="CART_URL">cart/cart.jsp?ev=scView</string>
+    <string name="ORDER_URL">myaccount/vieworder.jsp</string>
+    <string name="PDP_URL">product/detail.jsp</string>
+    <string name="PROMOTION_URL">promotion.jsp</string>
+    <string name="SIGNIN_URL">registration/signin.jsp</string>
+    <string name="REVIEW_CONFIRMATION_URL">review/reviewconfirmation.jsp</string>
+    <string name="ACCESSORIES_URL">accessoriesintermediatepage.jsp</string>
+    <string name="CREATE_WISHLIST_URL">createoreditwishlist.jsp</string>
+    <string name="COMPARE_PAGE">product/compare/compareproducts.jsp</string>
+    <string name="GOOGLE_MAPS">maps.google.com</string>
+    <string name="PROTECTION_PLANS">product/warrantyplansTerms.jsp</string>
+    <string name="ORDER_STATUS">myaccount/orderstatus.jsp</string>
+    <string name="ORDER_DETAILS">myaccount/orderdetail.jsp</string>
+    <string name="ORDER_STATUS_SIGNIN">orderstatussignin.jsp</string>
+    <string name="GAMETRADEIN_URL">games/tradeingames.jsp</string>
+    <string name="GAMINGSEARCH_URL">games/gamingsearch.jsp</string>
+    <string name="APPOLICIOUS_URL">BestBuy_US/mobile/widget/appcenter/html/android/android_appolicious.html</string>
+    <string name="UBER_CATEGORY_LIST">promotion.jsp?id=pcmcat269100050014</string>
+    <string name="MDOT_PRODUCTSEARCH_URL">search/results.jsp</string>
+    <string name="MDOT_SKUSEARCH_URL">product/detail.jsp?skuId=</string>
+    <string name="REFINE_RESULTS_TITLE">Refine</string>
+    <string name="PN_WO_TEXT">Please select the product categories that you would like to receive notifications for.</string>
+    <string name="PN_RZ_TEXT">You must log into Reward Zone in order to receive Reward Zone notifications.</string>
+   
+    <string name="main_css">	    
+        javascript:(function() {
+		    var css = document.createElement(\'style\');
+			css.type = \'text/css\';
+			
+			var ids=[\'masthead\',\'colophon\',\'header-search\',\'NarrowYourResults\',\'searchby_header\', \'share\', \'great_deal\', \'dealsEmailSignUp\',\'search_txtbox\',\'search_bar\',\'wide_ad_unit\',
+						\'header\',\'tablinks\',\'footer_link1\',\'footer\',\'products-subnav\',\'searchby\',\'searchby_video\',\'global_nav\',\'dart-container-320\',\'NarrowYourResults\',\'nav\'];
+			
+			for(i=0;i &lt; ids.length;i++) {
+				var textNode = \'#\'+ids[i]+\'{ display:none;}\';
+				var rules = document.createTextNode(textNode );
+				css.appendChild(rules);
+				var textNode1 = \'.bc8 #\'+ids[i]+\'{ display:none;}\';
+				var rules1 = document.createTextNode(textNode1 );
+				css.appendChild(rules1);
+			}
+			
+			var textNode = \'#header-search{ display:none !important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.caroufredsel_wrapper{ width:285px!important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'#rightColumn{width: 185px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);		
+			
+			var textNode = \'#pagination .total-reviews{padding-right: 0 !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);		
+			
+			var textNode = \'#customer-overview {margin: 0 6px 12px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.search_bar{ display:none;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.traderesults_hdr{ display:none;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.offers_txt3{ display:none;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.top_left_arrowNav{ margin-top:50px}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.top_right_arrowNav{ top: 193px !important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var length = document.getElementsByTagName(\'head\').length;
+			document.getElementsByTagName(\'head\')[length - 1].appendChild(css);
+			var x=document.getElementsByTagName(\'body\')[0];
+			x.appendChild(css);
+			
+			var textNode = \'.radiobtn_include{ padding-left:175px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.Margin57px{ margin-right: 50px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.apps-applist-download{ margin-right: -8px !important}\';
+			var rules = document.createTextNode(textNode);
+			css.appendChild(rules);
+			
+			var textNode = \'.MarTp-2{ float:right; margin-right: 8px !important}\';
+			var rules = document.createTextNode(textNode);
+			css.appendChild(rules);
+			
+			var mkplNodeDisplay = document.getElementsByClassName(\'compareMkpl\')[0].style.display;
+ 	    	if(mkplNodeDisplay == \'none\'){
+	 	    	var textNode = \'#detailstxt{ top:328px!important}\';
+				var rules = document.createTextNode(textNode );
+				css.appendChild(rules);	
+ 	    	}
+ 	    	else{
+ 	    		var textNode = \'#detailstxt{ top:386px!important}\';
+				var rules = document.createTextNode(textNode );
+				css.appendChild(rules);
+ 	    	}
+			
+		})()	</string>
+	
+    <string name="browse_css">         
+        javascript:(function() {
+        	document.getElementById(\'search_txtbox\').style.display=\'block\';
+    	})()	</string>
+	
+    <string name="browse_plp_css">         
+        javascript:(function() {
+        	document.getElementsByClassName(\'search_bar\')[0].style.display=\'block\';
+    	})()	</string>
+	
+    <string name="search_plp_css">         
+        javascript:(function() {
+        	document.getElementById(\'searchby_header\').style.display=\'block\';
+    	})()	</string>
+	
+    <string name="game_tradein_css">        
+        javascript:(function() {
+        	document.getElementById(\'search_tab\').style.display=\'none\';
+    	})()	</string>
+	
+    <string name="plp_css">	    
+        javascript:(function() {
+		    var css = document.createElement(\'style\');
+			css.type = \'text/css\';
+			
+			var ids=[\'masthead\',\'colophon\',\'header-search\',\'NarrowYourResults\', \'share\', \'great_deal\', \'dealsEmailSignUp\',\'search_txtbox\',\'search_bar\',\'wide_ad_unit\',
+						\'header\',\'tablinks\',\'footer_link1\',\'footer\',\'products-subnav\',\'searchby\',\'searchby_video\',\'global_nav\',\'dart-container-320\'];
+			
+			for(i=0;i &lt; ids.length;i++) {
+				var textNode = \'#\'+ids[i]+\'{ display:none;}\';
+				var rules = document.createTextNode(textNode );
+				css.appendChild(rules);
+				var textNode1 = \'.bc8 #\'+ids[i]+\'{ display:none;}\';
+				var rules1 = document.createTextNode(textNode1 );
+				css.appendChild(rules1);
+			}
+			
+			var textNode = \'#header-search{ display:none !important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'#searchby_header{ display:block!important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'#NarrowYourResults{ display:none !important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+
+			var textNode = \'.caroufredsel_wrapper{ width:285px!important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'#rightColumn{width: 185px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);		
+			
+			var textNode = \'#pagination .total-reviews{padding-right: 0 !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);		
+			
+			var textNode = \'#customer-overview {margin: 0 6px 12px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.search_bar{ display:none;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.traderesults_hdr{ display:none;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.offers_txt3{ display:none;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.top_left_arrowNav{ margin-top:50px}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'#top_right_arrowNav{ top: 193px !important}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var length = document.getElementsByTagName(\'head\').length;
+			document.getElementsByTagName(\'head\')[length - 1].appendChild(css);
+			var x=document.getElementsByTagName(\'body\')[0];
+			x.appendChild(css);
+			
+			var textNode = \'.pickloc{width: 80px; !important; margin-right: 0px; !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.loc_detail{width:190px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var textNode = \'.radiobtn_include{ padding-left:175px !important;}\';
+			var rules = document.createTextNode(textNode );
+			css.appendChild(rules);
+			
+			var mkplNodeDisplay = document.getElementsByClassName(\'compareMkpl\')[0].style.display;
+ 	    	if(mkplNodeDisplay == \'none\'){
+	 	    	var textNode = \'#detailstxt{ top:328px!important}\';
+				var rules = document.createTextNode(textNode );
+				css.appendChild(rules);	
+ 	    	}
+ 	    	else{
+ 	    		var textNode = \'#detailstxt{ top:386px!important}\';
+				var rules = document.createTextNode(textNode );
+				css.appendChild(rules);
+ 	    	}
+			
+		})()	</string>
+
+</resources><!-- and receive up to a ${***} Gift -->

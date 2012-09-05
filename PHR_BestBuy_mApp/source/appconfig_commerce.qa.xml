@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="commerce_domain">commerce.qa.bestbuy.com</string>
+	<string name="commerce_api_url">https://commerce.qa.bestbuy.com:443</string>
+	<string name="use_proxy">true</string>
+	<string name="commerce_path">/commerce/v0/start</string>
+</resources>

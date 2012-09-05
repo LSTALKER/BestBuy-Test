@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<include android:id="@+id/header" layout="@layout/header2" />
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@color/white">
+
+		<LinearLayout android:layout_width="fill_parent" android:baselineAligned="false"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:paddingTop="14dip" android:paddingLeft="23dip"
+			android:paddingBottom="15dip">
+
+			<RelativeLayout android:layout_width="100dip"
+				android:layout_height="85dip" android:layout_gravity="top|left"
+				android:gravity="center" android:layout_marginTop="5dip">
+
+				<ImageView android:id="@+id/product_item"
+					android:layout_width="100dip" android:layout_height="85dip" 
+					android:contentDescription="@string/image_content_description"/>
+			</RelativeLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:paddingLeft="25dip" android:layout_height="wrap_content"
+				android:orientation="vertical" android:layout_gravity="center_vertical"
+				android:layout_weight="1">
+
+				<TextView android:id="@+id/product_item_category"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="14dip" android:textStyle="bold"
+					android:textColor="#ae1231" android:text="Open Box Item" />
+
+				<TextView android:id="@+id/product_item_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="16dip" android:paddingTop="5dip"
+					android:textStyle="bold" android:textColor="#231f20"
+					android:paddingRight="10dip" android:maxLines="2"
+					android:ellipsize="end" />
+
+				<TextView android:id="@+id/previous_price"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="13dip" android:textColor="#737474"
+					android:paddingTop="3dip" />
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="13dip"
+					android:text="In Store Only" android:textColor="#737474"
+					android:textStyle="bold" />
+
+				<TextView android:id="@+id/current_price"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="16dip" android:textStyle="bold" 
+					android:textColor="#003b64" android:paddingTop="7dip" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<ImageView style="@style/drop_shadow" android:contentDescription="@string/image_content_description"/>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:layout_marginTop="-2dip">
+
+			<RelativeLayout android:layout_marginTop="4dip"
+				android:layout_marginBottom="10dip" style="@style/commerce_box.white"
+				android:layout_width="fill_parent" android:id="@+id/openbox_reviews"
+				android:paddingLeft="10dip" android:paddingRight="10dip"
+				android:paddingTop="8dip" android:paddingBottom="8dip"
+				android:layout_height="52dip" >
+
+				<TextView android:layout_width="wrap_content"
+					android:id="@+id/openbox_customer_reviews"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true" android:layout_height="wrap_content"
+					android:paddingLeft="2dip" android:textColor="#FF000000"
+					android:paddingTop="8dip" android:paddingBottom="8dip"
+					android:textSize="16dip" android:textStyle="bold" android:text="@string/reviews_text" />
+
+				<View android:id="@+id/view" android:layout_width="1dip"
+					android:layout_height="wrap_content" android:layout_centerVertical="true"
+					android:layout_alignParentRight="true" />
+
+				<ImageView android:src="@drawable/carrot_r"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:id="@+id/openbox_customer_reviews_carrot"
+					android:layout_centerVertical="true" android:layout_toLeftOf="@id/view"
+					android:layout_marginLeft="8dip" 
+					android:contentDescription="@string/image_content_description"/>
+
+				<TextView android:id="@+id/openbox_customer_review_avg_text"
+					android:textColor="#003b64" android:textSize="16dip"
+					android:textStyle="bold" android:layout_centerVertical="true"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:maxLength="3"
+					android:layout_marginRight="18dip" android:layout_toLeftOf="@id/view" />
+
+				<ImageView android:id="@+id/openbox_star_rating"
+					android:layout_marginRight="6dip" android:layout_width="wrap_content"
+					android:layout_toLeftOf="@id/openbox_customer_review_avg_text"
+					android:layout_centerVertical="true" android:layout_height="wrap_content" 
+					android:contentDescription="@string/image_content_description"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Details"
+			android:textSize="16dip" android:textStyle="bold" android:textColor="#231f20"
+			android:paddingLeft="22dip" />
+
+		<LinearLayout android:layout_marginBottom="10dip"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:layout_marginTop="5dip" style="@style/commerce_box.white"
+			android:layout_width="fill_parent" android:id="@+id/openbox_terms"
+			android:layout_height="wrap_content" android:layout_weight="1">
+
+			<ScrollView android:layout_height="fill_parent"
+				android:padding="5dip" android:layout_width="fill_parent"
+				android:fadingEdge="none" android:fillViewport="true">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical">
+
+					<WebView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/details_and_terms"
+						android:textColor="#231f20" android:textSize="13dip"
+						android:layout_marginLeft="1dip" />
+
+					<TextView android:id="@+id/disclaimer_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="8dip" android:textSize="13dip"
+						android:paddingTop="10dip" />
+
+					<TextView android:id="@+id/reg_data" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#231f20"
+						android:textSize="13dip" android:layout_marginLeft="8dip"
+						android:paddingTop="20dip" android:paddingBottom="17dip" />
+
+				</LinearLayout>
+
+			</ScrollView>
+
+		</LinearLayout>
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="4dip"
+			android:layout_marginLeft="11dip" android:layout_marginRight="11dip"
+			android:layout_marginBottom="10dip">
+			<ImageButton style="@style/default_style_wrap"
+				android:id="@+id/openbox_pdp_help_ib"
+				android:layout_alignParentLeft="true" android:src="@drawable/draw_help"
+				android:layout_height="wrap_content" android:background="#00FFFFFF" 
+				android:contentDescription="@string/image_content_description"/>
+			<ImageButton style="@style/default_style_wrap"
+				android:id="@+id/openbox_pdp_share_ib"
+				android:layout_alignParentRight="true" android:src="@drawable/draw_share"
+				android:background="#00FFFFFF" 
+				android:contentDescription="@string/image_content_description"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

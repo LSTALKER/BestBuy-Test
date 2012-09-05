@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="250dip"
+	android:layout_height="wrap_content" android:paddingTop="20dip"
+	android:paddingLeft="20dip" android:paddingRight="20dip"
+	android:paddingBottom="16dip">
+
+	<TextView android:id="@+id/store_locator_call_number"
+		android:layout_width="fill_parent" android:layout_height="30dip"
+		android:textColor="@color/white" android:textSize="13sp"
+		android:textStyle="bold" android:gravity="center"
+		android:layout_margin="10dip" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="15dip"
+		android:layout_marginBottom="15dip">
+
+		<Button android:id="@+id/store_locator_cancel"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight=".5" android:text="@string/cancel_text" android:textStyle="bold"
+			android:textSize="13sp" android:layout_marginRight="5dip"
+			android:textColor="@color/default_text" />
+
+		<Button android:id="@+id/store_locator_call"
+			android:layout_width="0dip" android:layout_height="wrap_content"
+			android:layout_weight=".5" android:text="Call"
+			android:layout_marginLeft="5dip" android:textStyle="bold"
+			android:textSize="13sp" android:textColor="@color/default_text" />
+
+	</LinearLayout>
+
+</LinearLayout>

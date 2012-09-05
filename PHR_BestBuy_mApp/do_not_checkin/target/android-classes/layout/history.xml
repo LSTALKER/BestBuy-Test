@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:textColor="#aaa">
+	<include layout="@layout/header2" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:gravity="center"
+		android:background="#FFe8e8e9"
+		>
+		<ImageView
+			android:id="@+id/history_tab_1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/tab_recent_norm" 
+			android:contentDescription="@string/image_content_description"/>
+		<ImageView
+			android:id="@+id/history_tab_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/tab_qr_norm"
+			android:contentDescription="@string/image_content_description" />
+		<ImageView
+			android:id="@+id/history_tab_3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/tab_photo_norm"
+			android:contentDescription="@string/image_content_description" />		
+	</LinearLayout>
+	<View style="@style/horizontal_line" />
+	<ListView
+		android:id="@+id/history_search_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:divider="#cccccc"
+		android:dividerHeight="1dip"
+		android:listSelector="@drawable/listbg"
+		android:cacheColorHint="#00000000" />
+	<ListView
+		android:id="@+id/history_mobile_scan_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:divider="#cccccc"
+		android:dividerHeight="1dip"
+		android:listSelector="@drawable/listbg"
+		android:cacheColorHint="#00000000" />
+	<ListView
+		android:id="@+id/history_photo_search_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:divider="#cccccc"
+		android:dividerHeight="1dip"
+		android:listSelector="@drawable/listbg"
+		android:cacheColorHint="#00000000" />
+	<TextView
+		android:id="@+id/history_search_result_empty"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="18dip"
+		android:textColor="#000"
+		android:textStyle="bold"
+		android:padding="10dip"
+		android:text="@string/no_results_found_text" />
+</LinearLayout>

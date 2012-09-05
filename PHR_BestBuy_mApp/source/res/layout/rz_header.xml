@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:id="@+id/reward_zone_header_seplayout" android:layout_height="wrap_content"
+	android:background="@drawable/header_rz_reg">
+	<ImageView android:id="@+id/reward_zone_header_logo"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:src="@drawable/logo_rz_regular" android:layout_centerInParent="true" 
+		android:contentDescription="@string/image_content_description"/>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingTop="10dip"
+		android:paddingBottom="11dip" android:textStyle="bold"
+		android:textSize="18sp" android:textColor="@color/white"
+		android:gravity="center" android:text="Terms &amp; Conditions"
+		android:visibility="gone" android:id="@+id/header_title"
+		android:layout_centerInParent="true" 
+		android:contentDescription="@string/image_content_description"
+		/>
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="7dip"
+    android:paddingTop="12dip" >
+
+    <TextView
+        android:id="@+id/rebateRowPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/doller_back"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:textColor="#003b64"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="14dip" >
+
+        <!-- Start: program -->
+
+        <TextView
+            android:id="@+id/rebateRowProgramTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="13sp" />
+        <!-- End: program -->
+
+        <TextView
+            android:id="@+id/rebateRowAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+        <!-- Start: dates -->
+
+        <TextView
+            android:id="@+id/rebateRowValidDatesTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:text="Valid Dates:"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rebateRowValidDatesLL1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="6dip"
+            android:paddingTop="3dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:src="@drawable/bullet" 
+                android:contentDescription="@string/image_content_description"/>
+
+            <TextView
+                android:id="@+id/rebateRowValidDatesTv1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rebateRowValidDatesLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="6dip"
+            android:paddingTop="3dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:src="@drawable/bullet"
+                android:contentDescription="@string/image_content_description" />
+
+            <TextView
+                android:id="@+id/rebateRowValidDatesTv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rebateRowValidDatesChildLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <!-- End: dates -->
+
+
+        <!-- Start: Important details -->
+
+        <TextView
+            android:id="@+id/rebateRowImpDetailsTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:text="Important Details:"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rebateRowImpDetailsLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <!-- End: Important details -->
+
+        <TextView
+            android:id="@+id/rebateRowViewMoreTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dip"
+            android:paddingTop="9dip"
+            android:text="View Less"
+            android:textColor="#003b64"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

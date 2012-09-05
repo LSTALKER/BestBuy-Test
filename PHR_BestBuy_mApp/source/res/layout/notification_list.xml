@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:CommerceBox="http://schemas.android.com/apk/res/com.bestbuy.android"
+	style="@style/default_style"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/searchresult"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:textColor="#aaa">
+		<LinearLayout
+			style="@style/default_style"
+			android:orientation="vertical"
+			android:layout_marginTop="40dip">
+			<LinearLayout
+				android:id="@+id/notification_list_new"
+				style="@style/default_style"
+				android:orientation="horizontal"
+				android:paddingTop="5dip"
+				android:paddingBottom="5dip"
+				android:background="@drawable/notifications_bg"
+				android:gravity="center_vertical"
+				android:padding="5dip">
+				<TextView
+					style="@style/commerce_text.bold"
+					android:id="@+id/notification_list_new_text"
+					android:paddingTop="8dip"
+					android:gravity="center"
+					android:textColor="#FFFFFF"
+					android:layout_marginLeft="15dip"
+					android:layout_weight="1"
+					android:text="new notifications" />
+				<ImageView
+					style="@style/default_style_wrap"
+					android:src="@drawable/btn_notification_share_close" 
+					android:contentDescription="@string/image_content_description"/>
+			</LinearLayout>
+			<ListView
+				android:id="@android:id/list"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:divider="#cccccc"
+				android:dividerHeight="1dip"
+				android:listSelector="@drawable/listbg"
+				android:cacheColorHint="#00000000" />
+			<TextView
+				android:id="@android:id/empty"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="18dip"
+				android:textColor="#000"
+				android:textStyle="bold"
+				android:padding="10dip"
+				android:text="@string/no_noti_text" />
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout
+		style="@style/header">
+		<ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo" 
+			android:contentDescription="@string/image_content_description"/>	
+		<TextView
+			style="@style/text.header"
+			android:text="@string/noti_title" />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/store_locator_root"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:textColor="#656565">
+
+	<RelativeLayout style="@style/header">
+		<ImageView
+			android:id="@+id/header_home"
+			style="@style/header_logo" 
+			android:contentDescription="@string/image_content_description"/>
+		<TextView android:text="Store Locations" style="@style/text.header" />
+		<include layout="@layout/header_cart_button" />
+	</RelativeLayout>
+
+	<FrameLayout android:id="@+id/store_locator_frame"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<com.google.android.maps.MapView
+			android:id="@+id/store_locator_map" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:enabled="true"
+			android:apiKey="@string/map_api_key" android:clickable="true" />
+
+	</FrameLayout>
+</LinearLayout>

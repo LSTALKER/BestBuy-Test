@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="@string/terms_and_condition"
+        android:textColor="#5a5a5a"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        style="@style/commerce_scrollView"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="330dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:gravity="center"
+                android:paddingBottom="25dip"
+                android:paddingTop="15dip" >
+
+                <ImageView
+                    android:id="@+id/carrier_Logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" 
+                    android:contentDescription="@string/image_content_description"/>
+
+                <ImageButton
+                    android:id="@+id/upgrade_chkr_at_t_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="18dip"
+                    android:layout_toRightOf="@id/carrier_Logo"
+                    android:background="@drawable/at_t_text" 
+                    android:contentDescription="@string/image_content_description"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:lineSpacingExtra="3dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="8dip"
+                    android:text="@string/early_upgrade" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:lineSpacingExtra="3dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="8dip"
+                    android:text="@string/some_restriction" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="3dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="8dip"
+                    android:text="@string/warning" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/early_iphone_upgrade_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/view_terms_con"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dip"
+                    android:paddingRight="5dip"
+                    android:text="View Terms &amp; Conditions"
+                    android:textColor="#336384"
+                    android:textSize="16dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
